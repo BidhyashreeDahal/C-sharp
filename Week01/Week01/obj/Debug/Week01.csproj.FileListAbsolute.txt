@@ -1,0 +1,9 @@
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\bin\Debug\Week01.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\bin\Debug\Week01.exe
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\bin\Debug\Week01.pdb
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.exe
+D:\courses\COSC2100\Repo\COSC2100\Week01\Week01\obj\Debug\Week01.pdb
