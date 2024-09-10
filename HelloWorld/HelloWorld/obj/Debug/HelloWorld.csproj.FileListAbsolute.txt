@@ -1,0 +1,10 @@
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+D:\courses\COSC2100\Repo\COSC2100\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
