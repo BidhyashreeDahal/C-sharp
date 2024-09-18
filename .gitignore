@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Cosc2100Demos/.vs/Cosc2100Demos/v17
+/Cosc2100Demos/Week01/.vs
