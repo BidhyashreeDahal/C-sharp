@@ -19,10 +19,23 @@ namespace HelloWorld
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lblHelloWorld.Text = "Hello World!";
+
+            DialogResult dr = (MessageBox.Show("Hi Bidhya",
+                MessageBoxButtons.YesNoCancel);
+            if (dr = DialogResult.Yes) btnClickThis.Text = "Yeah!";
+
+
+            {
+                lblHelloWorld.Text = "Yeah";
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_Click(object sender, EventArgs e)
         {
 
         }
