@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{82CD9027-D7F6-41D3-99DB-5688E96D4A92}|HelloWorld\\HelloWorld.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\helloworld\\helloworld\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82CD9027-D7F6-41D3-99DB-5688E96D4A92}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{82CD9027-D7F6-41D3-99DB-5688E96D4A92}|HelloWorld\\HelloWorld.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\helloworld\\helloworld\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{82CD9027-D7F6-41D3-99DB-5688E96D4A92}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -14,16 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\HelloWorld\\Form1.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Form1.cs",
+              "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\HelloWorld\\Form1.cs",
+              "RelativeToolTip": "HelloWorld\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:43:36.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\HelloWorld\\Form1.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Form1.cs",
-              "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\HelloWorld\\Form1.cs [Design]*",
-              "RelativeToolTip": "HelloWorld\\Form1.cs [Design]*",
+              "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\HelloWorld\\HelloWorld\\Form1.cs [Design]",
+              "RelativeToolTip": "HelloWorld\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T21:34:24.009Z",
               "EditorCaption": " [Design]"
