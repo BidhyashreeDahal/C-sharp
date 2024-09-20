@@ -1,11 +1,17 @@
-﻿using System;
+﻿/* COSC2100 - Week 3 Demo A
+ * ________________
+ * Sept 17, 2024
+ * Contains various generic tools that we can use
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Week02DemoC_ColorPicker
+namespace ClassExercise01
 {
     public static class Tools
     {
