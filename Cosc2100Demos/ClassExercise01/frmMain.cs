@@ -26,31 +26,43 @@ namespace ClassExercise01
 
         }
         #region Menu buttons for My little Games
+        /// <summary>
+        /// Handles the click event for the Ice Cream button. Toggles the visibility of the   
+        /// pnlIceCream panel and ensures that the pnlGTN panel is hidden.  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnIceCream_Click(object sender, EventArgs e)
         {
             pnlIceCream.Visible= !pnlIceCream.Visible;
             pnlGTN.Visible = false;
         }
 
-        // Make the GTN panel invisible and vise versa when the user click the GTN button
+        /// <summary>
+        /// Handles the click event for the GTN button. Toggles the visibility of the   
+        /// pnlGTN panel and ensures that the pnlIceCream panel is hidden.  
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGTN_Click(object sender, EventArgs e)
         {
             pnlGTN.Visible = !(pnlGTN.Visible);
-            pnlIceCream.Visible = false;
+            pnlIceCream.Visible = false; // Make the Icream panel invisible when the user click the Guess number button
         }
         #endregion
 
-       
-
-
         #region Set Defaults GTN
-        // Set defaults value when the form loads
+        /// <summary>
+        /// Set defaults value for icecream cart and guess the number games when the form loads
+        /// </summary>
         private void SetDefaults()
         {
             SetGTNDefaults();
             SetIceCreamDefaults(); // Set defaults for icecream
         }
-        // Set Defaults value of guess the number games
+        /// <summary>
+        /// Set Defaults values of guess the number games
+        /// </summary>
         private void SetGTNDefaults()
         {
             cboGTNSettingDifficulty.SelectedIndex = 0;
@@ -60,7 +72,9 @@ namespace ClassExercise01
             btnGTNPlayAgain.Visible = false; // Make the play again button invisible
         }
 
-        // Set the random number with in a selected range
+        /// <summary>
+        /// Set the random number with in a selected range
+        /// </summary>
         private void SetGTNRandomNumber()
         {
             nudGTNActualNumber.Value = Tools.RandomInt(1, (int)nudGTNGuess.Maximum);
@@ -70,7 +84,9 @@ namespace ClassExercise01
 
         #region Set Difficulty Level
 
-        // Set the level of difficulty for the game i.e. easy, medium or hard
+        /// <summary>
+        /// Set the level of difficulty for the game i.e. easy, medium or hard
+        /// </summary>
         private void SetGTNDifficulty()
         {
             switch (cboGTNSettingDifficulty.SelectedIndex)
@@ -97,22 +113,31 @@ namespace ClassExercise01
        
 
         #region Event Handlers for Guess the Number Games
-        // Set the defaults when the form loads
+        /// <summary>
+        /// Set the defaults when the form loads
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
         {
             SetDefaults();
         }
-        // Make the GTN panel invisible and vise versa when the user click the GTN button
-        
 
-        // Change the difficulty when the new level is selected
+        /// <summary>
+        /// Change the difficulty when the new level is selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cboGTNSettingDifficulty_SelectedIndexChanged(object sender, EventArgs e)
         {
             SetGTNDifficulty();
         }
-        // Exit button click event to confirm if the user really wants to exit
-
-        // Guess button click event to guide the user if the number they have enter is higher, lower or the exact.
+        
+        /// <summary>
+        /// Guess button click event to guide the user if the number they have enter is higher, lower or the exact.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGTNGuess_Click(object sender, EventArgs e)
         {
             nudGTNnumGuesses.Value += 1;
@@ -132,11 +157,21 @@ namespace ClassExercise01
                 btnGTNPlayAgain.Visible = true; // When the user's guess is correct make the play again button visible
             }
         }
-        // Reset the game when the user clicks play again
+        /// <summary>
+        /// Reset the game when the user clicks play again
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGTNPlayAgain_Click(object sender, EventArgs e)
         {
             SetGTNDefaults();
         }
+
+        /// <summary>
+        /// Exit Conformation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExitt_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
@@ -146,7 +181,9 @@ namespace ClassExercise01
 
         #region SetIceCreamDefaults
 
-        // Set Icecream Defaults
+        /// <summary>
+        /// Set Icecream Defaults
+        /// </summary>
         private void SetIceCreamDefaults()
         {
             cboProductlisst.SelectedIndex = Settings.DEFAULT_SELECTEDINDEX;
@@ -160,7 +197,11 @@ namespace ClassExercise01
         #endregion
 
         #region Event Handlers for Icecream
-        // Event Handlers for click button
+        /// <summary>
+        /// Add the iteams in the list if the users click the add button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
             btnCalculateTotal.Visible = true;
@@ -169,6 +210,15 @@ namespace ClassExercise01
             lbxAddedIceCreams.Items.Add(iceCreamType + " : " + nudQuantity.Value);
 
         }
+        /// <summary>  
+        /// Handles the event when the "Calculate Total" button is clicked.  
+        /// Calculates the total cost of ice creams added to the list box based on their quantities and prices.  
+        /// The ice cream prices are determined by their names using a switch statement.  
+        /// The total amount is updated, including a default cash box total, and is displayed in the cash box label.  
+        /// The individual total cost of the ice creams is displayed separately.  
+        /// </summary>  
+        /// <param name="sender">The source of the event.</param>  
+        /// <param name="e">The event data.</param>
         private void btnCalculateTotal_Click(object sender, EventArgs e)
         {
             int total = 0;
@@ -212,13 +262,21 @@ namespace ClassExercise01
             lblDisplayTotalPurchase.Text = "$" + total.ToString();
         }
 
-        // Remove the selected items from the listbox with the user click remove
+        /// <summary>
+        /// Remove the selected items from the listbox with the user click remove
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRemoveProduct_Click(object sender, EventArgs e)
         {
             lbxAddedIceCreams.Items.Remove(lbxAddedIceCreams.SelectedItem);
         }
 
-        // Clear everything in and set the defaults value when user hit clear
+        /// <summary>
+        /// Clear everything in and set the defaults value when user hit clear
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClear_Click(object sender, EventArgs e)
         {
             lbxAddedIceCreams.Items.Clear();
@@ -231,18 +289,21 @@ namespace ClassExercise01
         /// <param name="e"></param>
         private void btnReturnBack_Click(object sender, EventArgs e)
         {
-           
-
             string cashPaidText = txtEnterCash.Text;
             decimal cashPaid = decimal.Parse(cashPaidText);
-            decimal total = decimal.Parse(lblDisplayTotalPurchase.Text.Replace("$",""));
+            decimal total = decimal.Parse(lblDisplayTotalPurchase.Text.Replace("$", ""));
             decimal returnAmount = cashPaid - total;
             lblReturnAmount.Text = "$" + returnAmount.ToString();
 
 
             // Total Amount in Cash Box
-            lblCashBoxAmount.Text = "$" + ((total - returnAmount ) + Settings.DEFAULT_CASHBOXTOTAL).ToString();
+            lblCashBoxAmount.Text = "$" + ((total - returnAmount) + Settings.DEFAULT_CASHBOXTOTAL).ToString();
         }
+        /// <summary>
+        /// Confirm if the users want to exit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
