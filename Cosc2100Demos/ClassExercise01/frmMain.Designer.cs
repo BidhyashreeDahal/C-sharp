@@ -171,10 +171,10 @@
             this.btnExitt.Name = "btnExitt";
             this.btnExitt.Size = new System.Drawing.Size(138, 49);
             this.btnExitt.TabIndex = 12;
-            this.btnExitt.Text = "Ex&it";
-            this.toolTips.SetToolTip(this.btnExitt, "Click to Exit(alt+i)");
+            this.btnExitt.Text = "E&xit";
+            this.toolTips.SetToolTip(this.btnExitt, "Click to Exit(alt+x)");
             this.btnExitt.UseVisualStyleBackColor = true;
-            this.btnExitt.Click += new System.EventHandler(this.btnExitt_Click);
+            this.btnExitt.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblGTNTitle
             // 
@@ -733,8 +733,8 @@
             this.CancelButton = this.btnClear;
             this.ClientSize = new System.Drawing.Size(1127, 611);
             this.Controls.Add(this.panMenu);
-            this.Controls.Add(this.pnlIceCream);
             this.Controls.Add(this.pnlGTN);
+            this.Controls.Add(this.pnlIceCream);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Little Games";

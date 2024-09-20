@@ -25,7 +25,7 @@ namespace ClassExercise01
             InitializeComponent();
 
         }
-        #region Menu buttons for My little Games
+        #region Menu buttons Click even for My little Games
         /// <summary>
         /// Handles the click event for the Ice Cream button. Toggles the visibility of the   
         /// pnlIceCream panel and ensures that the pnlGTN panel is hidden.  
@@ -34,7 +34,7 @@ namespace ClassExercise01
         /// <param name="e"></param>
         private void btnIceCream_Click(object sender, EventArgs e)
         {
-            pnlIceCream.Visible= !pnlIceCream.Visible;
+            pnlIceCream.Visible = !pnlIceCream.Visible;
             pnlGTN.Visible = false;
         }
 
@@ -51,7 +51,7 @@ namespace ClassExercise01
         }
         #endregion
 
-        #region Set Defaults GTN
+        #region Set Defaults methods calling for Both Icream and GTN
         /// <summary>
         /// Set defaults value for icecream cart and guess the number games when the form loads
         /// </summary>
@@ -60,6 +60,8 @@ namespace ClassExercise01
             SetGTNDefaults();
             SetIceCreamDefaults(); // Set defaults for icecream
         }
+        #endregion
+        #region Set Defaults value GTN
         /// <summary>
         /// Set Defaults values of guess the number games
         /// </summary>
@@ -82,7 +84,7 @@ namespace ClassExercise01
         }
         #endregion 
 
-        #region Set Difficulty Level
+        #region Set Difficulty Level GTN
 
         /// <summary>
         /// Set the level of difficulty for the game i.e. easy, medium or hard
@@ -110,7 +112,7 @@ namespace ClassExercise01
         }
         #endregion GTN
 
-       
+
 
         #region Event Handlers for Guess the Number Games
         /// <summary>
@@ -132,7 +134,7 @@ namespace ClassExercise01
         {
             SetGTNDifficulty();
         }
-        
+
         /// <summary>
         /// Guess button click event to guide the user if the number they have enter is higher, lower or the exact.
         /// </summary>
@@ -166,16 +168,6 @@ namespace ClassExercise01
         {
             SetGTNDefaults();
         }
-
-        /// <summary>
-        /// Exit Conformation
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnExitt_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
-        }
         #endregion
 
 
@@ -189,7 +181,7 @@ namespace ClassExercise01
             cboProductlisst.SelectedIndex = Settings.DEFAULT_SELECTEDINDEX;
             nudQuantity.Value = Settings.DEFAULT_NUMERICUPDOWN;
             lblDisplayTotalPurchase.Text = "$" + Settings.DEFAULT_TOTALPURCHASE.ToString();
-            txtEnterCash.Text ="$" + Settings.DEFAULT_ENTERCASH.ToString();
+            txtEnterCash.Text = "$" + Settings.DEFAULT_ENTERCASH.ToString();
             lblReturnAmount.Text = "$" + Settings.DEFAULT_RETURNAMOUNT.ToString();
             lblCashBoxAmount.Text = "$" + Settings.DEFAULT_CASHBOXTOTAL.ToString();
 
@@ -226,7 +218,7 @@ namespace ClassExercise01
             foreach (var item in lbxAddedIceCreams.Items)
             {
                 // Items in the list box has two parts i.e Name and Quantity 
-                string[] parts = item.ToString().Split(':'); 
+                string[] parts = item.ToString().Split(':');
                 string iceCreamName = parts[0].Trim(); // Name of the Ice cream  
                 int quantity = int.Parse(parts[1].Trim()); // Quantity of this ice cream  
 
@@ -255,7 +247,7 @@ namespace ClassExercise01
 
                 // Calculate total for this specific item  
                 total += iceCreamPrice * quantity;
-                lblCashBoxAmount.Text = "$" + (total +Settings.DEFAULT_CASHBOXTOTAL).ToString();
+                lblCashBoxAmount.Text = "$" + (total + Settings.DEFAULT_CASHBOXTOTAL).ToString();
             }
 
             // Display the total cost  
@@ -299,8 +291,12 @@ namespace ClassExercise01
             // Total Amount in Cash Box
             lblCashBoxAmount.Text = "$" + ((total - returnAmount) + Settings.DEFAULT_CASHBOXTOTAL).ToString();
         }
+        #endregion
+
+
+
         /// <summary>
-        /// Confirm if the users want to exit
+        /// Exit For both icecream and Guess The Number game Confirm if the users want to exit
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -308,8 +304,8 @@ namespace ClassExercise01
         {
             if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
         }
-        #endregion
-    }
+
+    } 
 
 
 }
