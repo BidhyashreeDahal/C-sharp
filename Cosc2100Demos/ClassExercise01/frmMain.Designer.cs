@@ -44,9 +44,9 @@
             this.gbxGTNSettings = new System.Windows.Forms.GroupBox();
             this.cboGTNSettingDifficulty = new System.Windows.Forms.ComboBox();
             this.lblGTNGuessMaximum = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblMaximum = new System.Windows.Forms.Label();
+            this.lblGTNGussMinimum = new System.Windows.Forms.Label();
+            this.lblMinimum = new System.Windows.Forms.Label();
             this.lblGTNSettingsDifficulty = new System.Windows.Forms.Label();
             this.nudGTNGuess = new System.Windows.Forms.NumericUpDown();
             this.lblGTNEnterGuess = new System.Windows.Forms.Label();
@@ -257,9 +257,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbxGTNSettings.Controls.Add(this.cboGTNSettingDifficulty);
             this.gbxGTNSettings.Controls.Add(this.lblGTNGuessMaximum);
-            this.gbxGTNSettings.Controls.Add(this.label4);
-            this.gbxGTNSettings.Controls.Add(this.label3);
-            this.gbxGTNSettings.Controls.Add(this.label2);
+            this.gbxGTNSettings.Controls.Add(this.lblMaximum);
+            this.gbxGTNSettings.Controls.Add(this.lblGTNGussMinimum);
+            this.gbxGTNSettings.Controls.Add(this.lblMinimum);
             this.gbxGTNSettings.Controls.Add(this.lblGTNSettingsDifficulty);
             this.gbxGTNSettings.Location = new System.Drawing.Point(20, 64);
             this.gbxGTNSettings.Name = "gbxGTNSettings";
@@ -291,32 +291,32 @@
             this.lblGTNGuessMaximum.TabIndex = 4;
             this.lblGTNGuessMaximum.Text = "10";
             // 
-            // label4
+            // lblMaximum
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(371, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Maximum";
+            this.lblMaximum.AutoSize = true;
+            this.lblMaximum.Location = new System.Drawing.Point(371, 69);
+            this.lblMaximum.Name = "lblMaximum";
+            this.lblMaximum.Size = new System.Drawing.Size(76, 20);
+            this.lblMaximum.TabIndex = 3;
+            this.lblMaximum.Text = "Maximum";
             // 
-            // label3
+            // lblGTNGussMinimum
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(442, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "1";
+            this.lblGTNGussMinimum.AutoSize = true;
+            this.lblGTNGussMinimum.Location = new System.Drawing.Point(442, 26);
+            this.lblGTNGussMinimum.Name = "lblGTNGussMinimum";
+            this.lblGTNGussMinimum.Size = new System.Drawing.Size(18, 20);
+            this.lblGTNGussMinimum.TabIndex = 2;
+            this.lblGTNGussMinimum.Text = "1";
             // 
-            // label2
+            // lblMinimum
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(371, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Minimum";
+            this.lblMinimum.AutoSize = true;
+            this.lblMinimum.Location = new System.Drawing.Point(371, 26);
+            this.lblMinimum.Name = "lblMinimum";
+            this.lblMinimum.Size = new System.Drawing.Size(72, 20);
+            this.lblMinimum.TabIndex = 1;
+            this.lblMinimum.Text = "Minimum";
             // 
             // lblGTNSettingsDifficulty
             // 
@@ -468,7 +468,6 @@
             this.pnlIceCream.Name = "pnlIceCream";
             this.pnlIceCream.Size = new System.Drawing.Size(964, 614);
             this.pnlIceCream.TabIndex = 3;
-            this.pnlIceCream.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlIceCream_Paint);
             // 
             // lbxAddedIceCreams
             // 
@@ -769,9 +768,9 @@
         private System.Windows.Forms.GroupBox gbxGTNSettings;
         private System.Windows.Forms.ComboBox cboGTNSettingDifficulty;
         private System.Windows.Forms.Label lblGTNGuessMaximum;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMaximum;
+        private System.Windows.Forms.Label lblGTNGussMinimum;
+        private System.Windows.Forms.Label lblMinimum;
         private System.Windows.Forms.Label lblGTNSettingsDifficulty;
         private System.Windows.Forms.NumericUpDown nudGTNGuess;
         private System.Windows.Forms.Label lblGTNOutput;

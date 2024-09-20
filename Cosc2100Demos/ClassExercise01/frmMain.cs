@@ -224,7 +224,11 @@ namespace ClassExercise01
             lbxAddedIceCreams.Items.Clear();
             SetIceCreamDefaults();
         }
-        // Calculate the change when the user pay by cash
+        /// <summary>
+        /// Calculate the change when the user pay by cash
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnReturnBack_Click(object sender, EventArgs e)
         {
            
@@ -244,11 +248,6 @@ namespace ClassExercise01
             if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
         }
         #endregion
-
-        private void pnlIceCream_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 
 
