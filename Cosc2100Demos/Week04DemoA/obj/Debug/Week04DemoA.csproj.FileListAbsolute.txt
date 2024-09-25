@@ -7,3 +7,4 @@ D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week04DemoA\obj\Debug\Week04Demo
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week04DemoA\obj\Debug\Week04DemoA.csproj.CoreCompileInputs.cache
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week04DemoA\obj\Debug\Week04DemoA.exe
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week04DemoA\obj\Debug\Week04DemoA.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week04DemoA\obj\Debug\Week04DemoA.Form1.resources
