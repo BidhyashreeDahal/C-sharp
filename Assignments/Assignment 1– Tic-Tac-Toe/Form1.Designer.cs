@@ -51,9 +51,10 @@
             this.radPlayer1X = new System.Windows.Forms.RadioButton();
             this.radPlayer1O = new System.Windows.Forms.RadioButton();
             this.lblTurnIndicator = new System.Windows.Forms.Label();
-            this.lblGameSummery = new System.Windows.Forms.Label();
             this.lblGameSummeryDiscription = new System.Windows.Forms.Label();
             this.btnTurn = new System.Windows.Forms.Button();
+            this.lblSymbols = new System.Windows.Forms.Label();
+            this.lblGameSummery = new System.Windows.Forms.Label();
             this.pnlTicTacToc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,6 +183,7 @@
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.BackColor = System.Drawing.Color.White;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.Location = new System.Drawing.Point(1151, 534);
             this.btnExit.Name = "btnExit";
@@ -264,7 +266,7 @@
             // 
             this.lblNames.AutoSize = true;
             this.lblNames.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNames.Location = new System.Drawing.Point(872, 16);
+            this.lblNames.Location = new System.Drawing.Point(716, 16);
             this.lblNames.Name = "lblNames";
             this.lblNames.Size = new System.Drawing.Size(243, 25);
             this.lblNames.TabIndex = 17;
@@ -276,7 +278,7 @@
             this.radPlayer1X.AutoSize = true;
             this.radPlayer1X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPlayer1X.ForeColor = System.Drawing.Color.Red;
-            this.radPlayer1X.Location = new System.Drawing.Point(1075, 137);
+            this.radPlayer1X.Location = new System.Drawing.Point(1094, 137);
             this.radPlayer1X.Name = "radPlayer1X";
             this.radPlayer1X.Size = new System.Drawing.Size(53, 30);
             this.radPlayer1X.TabIndex = 4;
@@ -292,7 +294,7 @@
             this.radPlayer1O.AutoSize = true;
             this.radPlayer1O.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPlayer1O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radPlayer1O.Location = new System.Drawing.Point(1211, 137);
+            this.radPlayer1O.Location = new System.Drawing.Point(1186, 137);
             this.radPlayer1O.Name = "radPlayer1O";
             this.radPlayer1O.Size = new System.Drawing.Size(55, 30);
             this.radPlayer1O.TabIndex = 5;
@@ -314,40 +316,49 @@
             this.lblTurnIndicator.TabIndex = 20;
             this.lblTurnIndicator.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // lblGameSummery
-            // 
-            this.lblGameSummery.AutoSize = true;
-            this.lblGameSummery.Font = new System.Drawing.Font("Jokerman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGameSummery.ForeColor = System.Drawing.Color.Gray;
-            this.lblGameSummery.Location = new System.Drawing.Point(725, 310);
-            this.lblGameSummery.Name = "lblGameSummery";
-            this.lblGameSummery.Size = new System.Drawing.Size(208, 33);
-            this.lblGameSummery.TabIndex = 21;
-            this.lblGameSummery.Text = "Game Summery !";
-            // 
             // lblGameSummeryDiscription
             // 
             this.lblGameSummeryDiscription.AutoSize = true;
             this.lblGameSummeryDiscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameSummeryDiscription.ForeColor = System.Drawing.Color.Lime;
-            this.lblGameSummeryDiscription.Location = new System.Drawing.Point(785, 391);
+            this.lblGameSummeryDiscription.Location = new System.Drawing.Point(761, 371);
             this.lblGameSummeryDiscription.Name = "lblGameSummeryDiscription";
-            this.lblGameSummeryDiscription.Size = new System.Drawing.Size(72, 26);
+            this.lblGameSummeryDiscription.Size = new System.Drawing.Size(0, 26);
             this.lblGameSummeryDiscription.TabIndex = 22;
-            this.lblGameSummeryDiscription.Text = "..........";
             // 
             // btnTurn
             // 
-            this.btnTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTurn.ForeColor = System.Drawing.Color.Black;
             this.btnTurn.Location = new System.Drawing.Point(561, 255);
             this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(129, 66);
+            this.btnTurn.Size = new System.Drawing.Size(119, 67);
             this.btnTurn.TabIndex = 3;
-            this.btnTurn.Text = "First &Turn";
-            this.toolTip1.SetToolTip(this.btnTurn, "Click Here To Find Out Who Is Going First(alt+T)");
+            this.btnTurn.Text = "&Who Goes First ?";
+            this.toolTip1.SetToolTip(this.btnTurn, "Click Here To Find Out Who Is Going First(alt+W)");
             this.btnTurn.UseVisualStyleBackColor = true;
             this.btnTurn.Click += new System.EventHandler(this.btnTurn_Click);
+            // 
+            // lblSymbols
+            // 
+            this.lblSymbols.AutoSize = true;
+            this.lblSymbols.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSymbols.Location = new System.Drawing.Point(1046, 91);
+            this.lblSymbols.Name = "lblSymbols";
+            this.lblSymbols.Size = new System.Drawing.Size(220, 26);
+            this.lblSymbols.TabIndex = 23;
+            this.lblSymbols.Text = "Choose Your Symbol";
+            // 
+            // lblGameSummery
+            // 
+            this.lblGameSummery.AutoSize = true;
+            this.lblGameSummery.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameSummery.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblGameSummery.Location = new System.Drawing.Point(776, 310);
+            this.lblGameSummery.Name = "lblGameSummery";
+            this.lblGameSummery.Size = new System.Drawing.Size(218, 27);
+            this.lblGameSummery.TabIndex = 21;
+            this.lblGameSummery.Text = "Game Summery !";
             // 
             // frmTicTocGame
             // 
@@ -357,6 +368,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1305, 593);
+            this.Controls.Add(this.lblSymbols);
             this.Controls.Add(this.btnTurn);
             this.Controls.Add(this.lblGameSummeryDiscription);
             this.Controls.Add(this.lblGameSummery);
@@ -408,9 +420,10 @@
         private System.Windows.Forms.RadioButton radPlayer1X;
         private System.Windows.Forms.RadioButton radPlayer1O;
         private System.Windows.Forms.Label lblTurnIndicator;
-        private System.Windows.Forms.Label lblGameSummery;
         private System.Windows.Forms.Label lblGameSummeryDiscription;
         private System.Windows.Forms.Button btnTurn;
+        private System.Windows.Forms.Label lblSymbols;
+        private System.Windows.Forms.Label lblGameSummery;
     }
 }
 
