@@ -65,7 +65,7 @@
             this.lblFirstBox.Location = new System.Drawing.Point(3, -2);
             this.lblFirstBox.Name = "lblFirstBox";
             this.lblFirstBox.Size = new System.Drawing.Size(155, 123);
-            this.lblFirstBox.TabIndex = 0;
+            this.lblFirstBox.TabIndex = 2;
             this.lblFirstBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFirstBox.UseMnemonic = false;
             // 
@@ -77,7 +77,7 @@
             this.lblFifthBox.Location = new System.Drawing.Point(164, 131);
             this.lblFifthBox.Name = "lblFifthBox";
             this.lblFifthBox.Size = new System.Drawing.Size(155, 123);
-            this.lblFifthBox.TabIndex = 1;
+            this.lblFifthBox.TabIndex = 6;
             this.lblFifthBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFifthBox.UseMnemonic = false;
             // 
@@ -89,7 +89,7 @@
             this.lblNinthBox.Location = new System.Drawing.Point(325, 264);
             this.lblNinthBox.Name = "lblNinthBox";
             this.lblNinthBox.Size = new System.Drawing.Size(155, 123);
-            this.lblNinthBox.TabIndex = 2;
+            this.lblNinthBox.TabIndex = 10;
             this.lblNinthBox.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblNinthBox.UseMnemonic = false;
             // 
@@ -101,7 +101,7 @@
             this.lblSeventhBox.Location = new System.Drawing.Point(3, 264);
             this.lblSeventhBox.Name = "lblSeventhBox";
             this.lblSeventhBox.Size = new System.Drawing.Size(155, 123);
-            this.lblSeventhBox.TabIndex = 3;
+            this.lblSeventhBox.TabIndex = 8;
             this.lblSeventhBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblSeventhBox.UseMnemonic = false;
             // 
@@ -113,7 +113,7 @@
             this.lblFourthBox.Location = new System.Drawing.Point(3, 131);
             this.lblFourthBox.Name = "lblFourthBox";
             this.lblFourthBox.Size = new System.Drawing.Size(155, 123);
-            this.lblFourthBox.TabIndex = 4;
+            this.lblFourthBox.TabIndex = 5;
             this.lblFourthBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFourthBox.UseMnemonic = false;
             // 
@@ -125,7 +125,7 @@
             this.lblThirdBox.Location = new System.Drawing.Point(325, -2);
             this.lblThirdBox.Name = "lblThirdBox";
             this.lblThirdBox.Size = new System.Drawing.Size(155, 123);
-            this.lblThirdBox.TabIndex = 5;
+            this.lblThirdBox.TabIndex = 4;
             this.lblThirdBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblThirdBox.UseMnemonic = false;
             // 
@@ -137,7 +137,7 @@
             this.lblSecondBox.Location = new System.Drawing.Point(164, -2);
             this.lblSecondBox.Name = "lblSecondBox";
             this.lblSecondBox.Size = new System.Drawing.Size(155, 123);
-            this.lblSecondBox.TabIndex = 6;
+            this.lblSecondBox.TabIndex = 3;
             this.lblSecondBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblSecondBox.UseMnemonic = false;
             // 
@@ -161,7 +161,7 @@
             this.lblEighthBox.Location = new System.Drawing.Point(164, 264);
             this.lblEighthBox.Name = "lblEighthBox";
             this.lblEighthBox.Size = new System.Drawing.Size(155, 123);
-            this.lblEighthBox.TabIndex = 8;
+            this.lblEighthBox.TabIndex = 9;
             this.lblEighthBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEighthBox.UseMnemonic = false;
             // 
@@ -172,7 +172,7 @@
             this.btnReset.Location = new System.Drawing.Point(999, 534);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(122, 47);
-            this.btnReset.TabIndex = 9;
+            this.btnReset.TabIndex = 6;
             this.btnReset.Text = "&Reset";
             this.toolTip1.SetToolTip(this.btnReset, "Click Here To Reset The Game. Shortkey(alt+R)");
             this.btnReset.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             this.btnExit.Location = new System.Drawing.Point(1151, 534);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(122, 47);
-            this.btnExit.TabIndex = 10;
+            this.btnExit.TabIndex = 7;
             this.btnExit.Text = "E&xit";
             this.toolTip1.SetToolTip(this.btnExit, "Click Here To Exit (alt+x)");
             this.btnExit.UseVisualStyleBackColor = false;
@@ -197,7 +197,7 @@
             this.txtFirstPlayerName.Location = new System.Drawing.Point(721, 93);
             this.txtFirstPlayerName.Name = "txtFirstPlayerName";
             this.txtFirstPlayerName.Size = new System.Drawing.Size(238, 26);
-            this.txtFirstPlayerName.TabIndex = 13;
+            this.txtFirstPlayerName.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtFirstPlayerName, "Enter the name of first player");
             // 
             // txtSecondPlayerName
@@ -205,7 +205,7 @@
             this.txtSecondPlayerName.Location = new System.Drawing.Point(721, 204);
             this.txtSecondPlayerName.Name = "txtSecondPlayerName";
             this.txtSecondPlayerName.Size = new System.Drawing.Size(238, 26);
-            this.txtSecondPlayerName.TabIndex = 14;
+            this.txtSecondPlayerName.TabIndex = 2;
             this.toolTip1.SetToolTip(this.txtSecondPlayerName, "Enter the name of second player");
             // 
             // pnlTicTacToc
@@ -227,7 +227,8 @@
             this.pnlTicTacToc.MinimumSize = new System.Drawing.Size(490, 396);
             this.pnlTicTacToc.Name = "pnlTicTacToc";
             this.pnlTicTacToc.Size = new System.Drawing.Size(490, 396);
-            this.pnlTicTacToc.TabIndex = 11;
+            this.pnlTicTacToc.TabIndex = 1;
+            this.pnlTicTacToc.TabStop = true;
             // 
             // lblTitle
             // 
@@ -236,7 +237,7 @@
             this.lblTitle.Location = new System.Drawing.Point(15, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(186, 41);
-            this.lblTitle.TabIndex = 12;
+            this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Tic Tac Toe";
             // 
             // lblSecondPlayer
@@ -271,29 +272,34 @@
             // 
             // radPlayer1X
             // 
+            this.radPlayer1X.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radPlayer1X.AutoSize = true;
             this.radPlayer1X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPlayer1X.ForeColor = System.Drawing.Color.Red;
             this.radPlayer1X.Location = new System.Drawing.Point(1075, 137);
             this.radPlayer1X.Name = "radPlayer1X";
             this.radPlayer1X.Size = new System.Drawing.Size(53, 30);
-            this.radPlayer1X.TabIndex = 18;
+            this.radPlayer1X.TabIndex = 4;
             this.radPlayer1X.TabStop = true;
-            this.radPlayer1X.Text = "X";
+            this.radPlayer1X.Text = "&X";
+            this.toolTip1.SetToolTip(this.radPlayer1X, "Click Here to choose the X symbol as the game starter.(alt+X)");
             this.radPlayer1X.UseVisualStyleBackColor = true;
             this.radPlayer1X.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
             // 
             // radPlayer1O
             // 
+            this.radPlayer1O.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radPlayer1O.AutoSize = true;
             this.radPlayer1O.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPlayer1O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radPlayer1O.Location = new System.Drawing.Point(1213, 137);
+            this.radPlayer1O.Location = new System.Drawing.Point(1211, 137);
             this.radPlayer1O.Name = "radPlayer1O";
             this.radPlayer1O.Size = new System.Drawing.Size(55, 30);
-            this.radPlayer1O.TabIndex = 19;
+            this.radPlayer1O.TabIndex = 5;
             this.radPlayer1O.TabStop = true;
-            this.radPlayer1O.Text = "O";
+            this.radPlayer1O.Text = "&O";
+            this.radPlayer1O.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.radPlayer1O, "Click Here To Choose O symbol as the game starter(alt+O)");
             this.radPlayer1O.UseVisualStyleBackColor = true;
             this.radPlayer1O.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
             // 
@@ -336,17 +342,20 @@
             this.btnTurn.ForeColor = System.Drawing.Color.Black;
             this.btnTurn.Location = new System.Drawing.Point(561, 255);
             this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(100, 50);
-            this.btnTurn.TabIndex = 23;
-            this.btnTurn.Text = "Turn";
+            this.btnTurn.Size = new System.Drawing.Size(129, 66);
+            this.btnTurn.TabIndex = 3;
+            this.btnTurn.Text = "First &Turn";
+            this.toolTip1.SetToolTip(this.btnTurn, "Click Here To Find Out Who Is Going First(alt+T)");
             this.btnTurn.UseVisualStyleBackColor = true;
             this.btnTurn.Click += new System.EventHandler(this.btnTurn_Click);
             // 
             // frmTicTocGame
             // 
+            this.AcceptButton = this.btnReset;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1305, 593);
             this.Controls.Add(this.btnTurn);
             this.Controls.Add(this.lblGameSummeryDiscription);
@@ -366,6 +375,8 @@
             this.ForeColor = System.Drawing.Color.White;
             this.MinimumSize = new System.Drawing.Size(1327, 649);
             this.Name = "frmTicTocGame";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun Game";
             this.pnlTicTacToc.ResumeLayout(false);
             this.ResumeLayout(false);
