@@ -352,11 +352,11 @@
             // lblGameSummery
             // 
             this.lblGameSummery.AutoSize = true;
-            this.lblGameSummery.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameSummery.Font = new System.Drawing.Font("Jokerman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameSummery.ForeColor = System.Drawing.Color.DarkGray;
             this.lblGameSummery.Location = new System.Drawing.Point(776, 310);
             this.lblGameSummery.Name = "lblGameSummery";
-            this.lblGameSummery.Size = new System.Drawing.Size(218, 27);
+            this.lblGameSummery.Size = new System.Drawing.Size(207, 35);
             this.lblGameSummery.TabIndex = 21;
             this.lblGameSummery.Text = "Game Summery !";
             // 
