@@ -306,11 +306,11 @@
             // lblTurnIndicator
             // 
             this.lblTurnIndicator.AutoSize = true;
-            this.lblTurnIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurnIndicator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblTurnIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurnIndicator.ForeColor = System.Drawing.Color.Lime;
             this.lblTurnIndicator.Location = new System.Drawing.Point(1089, 215);
             this.lblTurnIndicator.Name = "lblTurnIndicator";
-            this.lblTurnIndicator.Size = new System.Drawing.Size(0, 25);
+            this.lblTurnIndicator.Size = new System.Drawing.Size(0, 26);
             this.lblTurnIndicator.TabIndex = 20;
             this.lblTurnIndicator.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
@@ -329,7 +329,7 @@
             // 
             this.lblGameSummeryDiscription.AutoSize = true;
             this.lblGameSummeryDiscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGameSummeryDiscription.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblGameSummeryDiscription.ForeColor = System.Drawing.Color.Lime;
             this.lblGameSummeryDiscription.Location = new System.Drawing.Point(785, 391);
             this.lblGameSummeryDiscription.Name = "lblGameSummeryDiscription";
             this.lblGameSummeryDiscription.Size = new System.Drawing.Size(72, 26);

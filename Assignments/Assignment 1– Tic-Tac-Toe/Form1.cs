@@ -249,7 +249,6 @@ namespace Assignment_1__Tic_Tac_Toe
             radPlayer1X.Enabled = false;
             radPlayer1O.Enabled = false; 
             TurnDecider();
-            MessageBox.Show("Symbols selected! Game can now begin.");
            
         }
         /// <summary>
@@ -323,9 +322,13 @@ namespace Assignment_1__Tic_Tac_Toe
             }
           
         }
+
         #endregion
 
-        
+        private void frmTicTocGame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
           
