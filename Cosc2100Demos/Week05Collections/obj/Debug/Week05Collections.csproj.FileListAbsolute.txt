@@ -1,0 +1,10 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\bin\Debug\Week05Collections.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\bin\Debug\Week05Collections.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\bin\Debug\Week05Collections.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.Form1.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week05Collections\obj\Debug\Week05Collections.pdb
