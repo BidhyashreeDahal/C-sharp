@@ -43,16 +43,16 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.txtFirstPlayerName = new System.Windows.Forms.TextBox();
             this.txtSecondPlayerName = new System.Windows.Forms.TextBox();
+            this.radPlayer1X = new System.Windows.Forms.RadioButton();
+            this.radPlayer1O = new System.Windows.Forms.RadioButton();
+            this.btnTurn = new System.Windows.Forms.Button();
             this.pnlTicTacToc = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblSecondPlayer = new System.Windows.Forms.Label();
             this.lblFirstPlayer = new System.Windows.Forms.Label();
             this.lblNames = new System.Windows.Forms.Label();
-            this.radPlayer1X = new System.Windows.Forms.RadioButton();
-            this.radPlayer1O = new System.Windows.Forms.RadioButton();
             this.lblTurnIndicator = new System.Windows.Forms.Label();
             this.lblGameSummeryDiscription = new System.Windows.Forms.Label();
-            this.btnTurn = new System.Windows.Forms.Button();
             this.lblSymbols = new System.Windows.Forms.Label();
             this.lblGameSummery = new System.Windows.Forms.Label();
             this.pnlTicTacToc.SuspendLayout();
@@ -210,6 +210,52 @@
             this.txtSecondPlayerName.TabIndex = 2;
             this.toolTip1.SetToolTip(this.txtSecondPlayerName, "Enter the name of second player");
             // 
+            // radPlayer1X
+            // 
+            this.radPlayer1X.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radPlayer1X.AutoSize = true;
+            this.radPlayer1X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPlayer1X.ForeColor = System.Drawing.Color.Red;
+            this.radPlayer1X.Location = new System.Drawing.Point(1094, 137);
+            this.radPlayer1X.Name = "radPlayer1X";
+            this.radPlayer1X.Size = new System.Drawing.Size(53, 30);
+            this.radPlayer1X.TabIndex = 4;
+            this.radPlayer1X.TabStop = true;
+            this.radPlayer1X.Text = "&X";
+            this.toolTip1.SetToolTip(this.radPlayer1X, "Click Here to choose the X symbol as the game starter.(alt+X)");
+            this.radPlayer1X.UseVisualStyleBackColor = true;
+            this.radPlayer1X.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
+            // 
+            // radPlayer1O
+            // 
+            this.radPlayer1O.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radPlayer1O.AutoSize = true;
+            this.radPlayer1O.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPlayer1O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.radPlayer1O.Location = new System.Drawing.Point(1186, 137);
+            this.radPlayer1O.Name = "radPlayer1O";
+            this.radPlayer1O.Size = new System.Drawing.Size(55, 30);
+            this.radPlayer1O.TabIndex = 5;
+            this.radPlayer1O.TabStop = true;
+            this.radPlayer1O.Text = "&O";
+            this.radPlayer1O.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.radPlayer1O, "Click Here To Choose O symbol as the game starter(alt+O)");
+            this.radPlayer1O.UseVisualStyleBackColor = true;
+            this.radPlayer1O.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
+            // 
+            // btnTurn
+            // 
+            this.btnTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTurn.ForeColor = System.Drawing.Color.Black;
+            this.btnTurn.Location = new System.Drawing.Point(561, 255);
+            this.btnTurn.Name = "btnTurn";
+            this.btnTurn.Size = new System.Drawing.Size(119, 67);
+            this.btnTurn.TabIndex = 3;
+            this.btnTurn.Text = "&Who Goes First ?";
+            this.toolTip1.SetToolTip(this.btnTurn, "Click Here To Find Out Who Is Going First(alt+W)");
+            this.btnTurn.UseVisualStyleBackColor = true;
+            this.btnTurn.Click += new System.EventHandler(this.btnTurn_Click);
+            // 
             // pnlTicTacToc
             // 
             this.pnlTicTacToc.BackColor = System.Drawing.Color.MidnightBlue;
@@ -272,39 +318,6 @@
             this.lblNames.TabIndex = 17;
             this.lblNames.Text = "Enter Your Names To Play";
             // 
-            // radPlayer1X
-            // 
-            this.radPlayer1X.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radPlayer1X.AutoSize = true;
-            this.radPlayer1X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radPlayer1X.ForeColor = System.Drawing.Color.Red;
-            this.radPlayer1X.Location = new System.Drawing.Point(1094, 137);
-            this.radPlayer1X.Name = "radPlayer1X";
-            this.radPlayer1X.Size = new System.Drawing.Size(53, 30);
-            this.radPlayer1X.TabIndex = 4;
-            this.radPlayer1X.TabStop = true;
-            this.radPlayer1X.Text = "&X";
-            this.toolTip1.SetToolTip(this.radPlayer1X, "Click Here to choose the X symbol as the game starter.(alt+X)");
-            this.radPlayer1X.UseVisualStyleBackColor = true;
-            this.radPlayer1X.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
-            // 
-            // radPlayer1O
-            // 
-            this.radPlayer1O.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radPlayer1O.AutoSize = true;
-            this.radPlayer1O.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radPlayer1O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radPlayer1O.Location = new System.Drawing.Point(1186, 137);
-            this.radPlayer1O.Name = "radPlayer1O";
-            this.radPlayer1O.Size = new System.Drawing.Size(55, 30);
-            this.radPlayer1O.TabIndex = 5;
-            this.radPlayer1O.TabStop = true;
-            this.radPlayer1O.Text = "&O";
-            this.radPlayer1O.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.radPlayer1O, "Click Here To Choose O symbol as the game starter(alt+O)");
-            this.radPlayer1O.UseVisualStyleBackColor = true;
-            this.radPlayer1O.CheckedChanged += new System.EventHandler(this.radPlayer1X_CheckedChanged);
-            // 
             // lblTurnIndicator
             // 
             this.lblTurnIndicator.AutoSize = true;
@@ -325,19 +338,6 @@
             this.lblGameSummeryDiscription.Name = "lblGameSummeryDiscription";
             this.lblGameSummeryDiscription.Size = new System.Drawing.Size(0, 26);
             this.lblGameSummeryDiscription.TabIndex = 22;
-            // 
-            // btnTurn
-            // 
-            this.btnTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTurn.ForeColor = System.Drawing.Color.Black;
-            this.btnTurn.Location = new System.Drawing.Point(561, 255);
-            this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(119, 67);
-            this.btnTurn.TabIndex = 3;
-            this.btnTurn.Text = "&Who Goes First ?";
-            this.toolTip1.SetToolTip(this.btnTurn, "Click Here To Find Out Who Is Going First(alt+W)");
-            this.btnTurn.UseVisualStyleBackColor = true;
-            this.btnTurn.Click += new System.EventHandler(this.btnTurn_Click);
             // 
             // lblSymbols
             // 
@@ -362,7 +362,7 @@
             // 
             // frmTicTocGame
             // 
-            this.AcceptButton = this.btnReset;
+            this.AcceptButton = this.btnTurn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;

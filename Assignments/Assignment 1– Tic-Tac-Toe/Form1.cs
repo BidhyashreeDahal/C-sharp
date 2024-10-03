@@ -15,6 +15,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 namespace Assignment_1__Tic_Tac_Toe
 {
     /// <summary>
@@ -185,7 +186,20 @@ namespace Assignment_1__Tic_Tac_Toe
             // Player 1 and Player 2 should have their respective symbols
             lblGameSummeryDiscription.Text = $"{txtFirstPlayerName.Text} ({player1Symbol}): {player1Score} | {txtSecondPlayerName.Text} ({player2Symbol}): {player2Score}";
         }
+        #endregion
 
+        #region Additional Feature
+        /// <summary>
+        /// Method to play the click sound
+        /// </summary>
+        private void PlaySound()
+        {
+            using (SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.A))
+            {
+                soundPlayer.Play();
+            }
+            
+        }
         #endregion
 
         #region UI Click Event Handlers
@@ -275,6 +289,7 @@ namespace Assignment_1__Tic_Tac_Toe
             isPlayer1Turn = !isPlayer1Turn;
             TurnDecider();
             CheckForWin();   
+            PlaySound();
         }
         /// <summary>
         /// Confirm if user really wants to exit and Exits the application if user hit ok button
