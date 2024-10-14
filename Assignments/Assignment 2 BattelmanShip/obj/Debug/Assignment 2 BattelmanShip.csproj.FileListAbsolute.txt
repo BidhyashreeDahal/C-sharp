@@ -1,0 +1,10 @@
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment 2 BattelmanShip.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment_2_BattelmanShip.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment 2 BattelmanShip.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment 2 BattelmanShip.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\bin\Debug\Assignment 2 BattelmanShip.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\bin\Debug\Assignment 2 BattelmanShip.exe
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\bin\Debug\Assignment 2 BattelmanShip.pdb
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment 2 BattelmanShip.exe
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment 2 BattelmanShip.pdb
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 2 BattelmanShip\obj\Debug\Assignment_2_BattelmanShip.BattelShip.resources

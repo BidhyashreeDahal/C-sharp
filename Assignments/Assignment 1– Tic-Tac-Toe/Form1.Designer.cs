@@ -169,6 +169,7 @@
             // btnReset
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnReset.ForeColor = System.Drawing.Color.Black;
             this.btnReset.Location = new System.Drawing.Point(999, 534);
             this.btnReset.Name = "btnReset";
@@ -245,6 +246,7 @@
             // 
             // btnTurn
             // 
+            this.btnTurn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTurn.ForeColor = System.Drawing.Color.Black;
             this.btnTurn.Location = new System.Drawing.Point(561, 255);
@@ -359,6 +361,7 @@
             this.lblGameSummery.Size = new System.Drawing.Size(207, 35);
             this.lblGameSummery.TabIndex = 21;
             this.lblGameSummery.Text = "Game Summery !";
+            this.lblGameSummery.Click += new System.EventHandler(this.lblGameSummery_Click);
             // 
             // frmTicTocGame
             // 
@@ -390,6 +393,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun Game";
+            this.Load += new System.EventHandler(this.frmTicTocGame_Load);
             this.pnlTicTacToc.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

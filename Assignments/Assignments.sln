@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 1– Tic-Tac-Toe", "Assignment 1– Tic-Tac-Toe\Assignment 1– Tic-Tac-Toe.csproj", "{56F2DEAF-AE15-4682-902D-A5CA9EC3FA0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2 BattelmanShip", "Assignment 2 BattelmanShip\Assignment 2 BattelmanShip.csproj", "{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{56F2DEAF-AE15-4682-902D-A5CA9EC3FA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56F2DEAF-AE15-4682-902D-A5CA9EC3FA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56F2DEAF-AE15-4682-902D-A5CA9EC3FA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

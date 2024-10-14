@@ -337,8 +337,17 @@ namespace Assignment_1__Tic_Tac_Toe
             }
           
         }
-
         #endregion
+
+        private void frmTicTocGame_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGameSummery_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
           
