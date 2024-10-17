@@ -73,6 +73,16 @@ namespace Assignment_2_BattelmanShip.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] BC {
+            get {
+                object obj = ResourceManager.GetObject("BC", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] DW {
             get {
                 object obj = ResourceManager.GetObject("DW", resourceCulture);
@@ -87,6 +97,16 @@ namespace Assignment_2_BattelmanShip.Properties {
             get {
                 object obj = ResourceManager.GetObject("New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WW {
+            get {
+                object obj = ResourceManager.GetObject("WW", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

@@ -121,10 +121,16 @@
   <data name="A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="BC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BC.crdownload;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="DW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DW.crdownload;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\New.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WW.crdownload;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

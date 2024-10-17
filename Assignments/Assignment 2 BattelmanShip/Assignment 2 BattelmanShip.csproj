@@ -79,11 +79,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\WW.crdownload" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BC.crdownload" />
     <None Include="Resources\DW.crdownload" />
     <None Include="Resources\New.jpg" />
   </ItemGroup>

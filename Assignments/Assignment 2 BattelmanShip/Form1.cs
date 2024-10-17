@@ -94,9 +94,7 @@ namespace Assignment_2_BattelmanShip
             Initialized_Board(); // Set up the grid first
             BS.RandomizeBoats(); // Randomize boat placements
             InitializeDataGridViews(); // Initialize the grid's data and styles
-          
             InitializedComboBoxes(); // Initialize combo boxes or any other UI elements
-        
             dgv1.CellClick += dataGridView1_CellContentClick;
         }
         #endregion
@@ -174,11 +172,9 @@ namespace Assignment_2_BattelmanShip
                 int y = e.ColumnIndex;
                 if (BS.board[x, y] == BoardStatus.Hit || BS.board[x, y] == BoardStatus.Miss)
                 {
-                    // Show a message to the user  
-                    MessageBox.Show("This cell has already been attacked!");
-                    return; // Exit the method to prevent further actions  
+                    return; 
                 }
-
+               
                 // Fire missile and update the clicked grid
                 bool hit = BS.FireMissile(x, y);
                 UpdateBoardVisuals(clickedGrid, x, y, hit); 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment_2_BattelmanShip.Properties;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -103,12 +104,28 @@ namespace Assignment_2_BattelmanShip
             if (sunk)
             {
                 sunkBoatsCount++;
-                if(sunkBoatsCount ==5)
+             
+                using (MemoryStream stream = new MemoryStream(Properties.Resources.BC))
+                {
+                    using (SoundPlayer soundPlayer = new SoundPlayer(stream))
+                    {
+                        soundPlayer.Play();
+                    }
+                }
+                if (sunkBoatsCount ==5)
                 {
                     MessageBox.Show("Congratulations All the boats are Sunken.");
+                    using (MemoryStream stream = new MemoryStream(Properties.Resources.WW))
+                    {
+                        using (SoundPlayer soundPlayer = new SoundPlayer(stream))
+                        {
+                            soundPlayer.Play();
+                        }
+                    }
                 }
             }
         }
+       
         #endregion
         #region Game Status
         /// <summary>
