@@ -146,14 +146,41 @@ namespace Week06DemoA_DroidFactory
 
         private void PopulateDroidDetails(Droid droid)
         {
-            lblDetailsDesignation.Text = droid.Designation;
-            lblDetailsOwner.Text = droid.Owner;
-            chkDetailsInService.Checked = droid.IsInService;
-            lblDetailsPrimaryColour.BackColor = droid.PrimaryColor;
-            lblDetailsSecondaryColour.BackColor = droid.SecondaryColor;
+            if (droid != null)
+            {
+                lblDetailsDesignation.Text = droid.Designation;
+                lblDetailsOwner.Text = droid.Owner;
+                chkDetailsInService.Checked = droid.IsInService;
+                lblDetailsPrimaryColour.BackColor = droid.PrimaryColor;
+                lblDetailsSecondaryColour.BackColor = droid.SecondaryColor;
+            }
+            else 
+            {
+                lblDetailsDesignation.Text = String.Empty;
+                lblDetailsOwner.Text = String.Empty;
+                chkDetailsInService.Checked =false;
+                lblDetailsPrimaryColour.BackColor = Color.Gray;
+                lblDetailsSecondaryColour.BackColor = Color.Gray ;
+
+             }
+        }
+
+       
+       
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+
+            if (lboxDroids.SelectedIndex > -1)
+            {
+                frmDroidEditor frm = new frmDroidEditor(lboxDroids.SelectedItem.ToString());
+                frm.ShowDialog();
+                PopulateDroidList();
+                PopulateDroidDetails(null);
+                
+            }
+
         }
         #endregion
-
-
     }
 }

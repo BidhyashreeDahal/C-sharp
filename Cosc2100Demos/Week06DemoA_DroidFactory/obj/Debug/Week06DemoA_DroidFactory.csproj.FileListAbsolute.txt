@@ -20,3 +20,4 @@ D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week06DemoA_DroidFactory\obj\Deb
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week06DemoA_DroidFactory\obj\Debug\Week06DemoA_DroidFactory.csproj.CoreCompileInputs.cache
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week06DemoA_DroidFactory\obj\Debug\Week06DemoA_DroidFactory.exe
 D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week06DemoA_DroidFactory\obj\Debug\Week06DemoA_DroidFactory.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week06DemoA_DroidFactory\obj\Debug\Week06DemoA_DroidFactory.frmDroidEditor.resources
