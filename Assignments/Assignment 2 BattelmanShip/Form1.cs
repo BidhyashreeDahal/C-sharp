@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Title:PartialBS.cs
+ * Name: Bidhyashree Dahal
+ * 100952513
+ * Form.cs that handles the User Interface of battleship game.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -161,7 +167,7 @@ namespace Assignment_2_BattelmanShip
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Get the grid that was clicked
-            DataGridView clickedGrid = sender as DataGridView;
+            DataGridView clickedGrid = sender as DataGridView;//Sender refers to an object that was triggered.
 
 
             if (clickedGrid != null && e.RowIndex >= 0 && e.RowIndex < BS.MAX_BOARD_SIZE &&

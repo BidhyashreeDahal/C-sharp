@@ -1,4 +1,13 @@
-﻿using Assignment_2_BattelmanShip.Properties;
+﻿/*
+ * Title:PartialBS.cs
+ * Name: Bidhyashree Dahal
+ * 100952513
+ * Partial BS class that handles the logic of the battleship game like 
+ * fire missile, check hit, check if the boat is sunken etc
+ */
+
+
+using Assignment_2_BattelmanShip.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
