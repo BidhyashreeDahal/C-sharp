@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 1– Tic-Tac-Toe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2 BattelmanShip", "Assignment 2 BattelmanShip\Assignment 2 BattelmanShip.csproj", "{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 3D&D", "Assignment 3D&D\Assignment 3D&D.csproj", "{D91AD963-590C-4D9F-B78F-8A8DF53D7595}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EB01F6-CFEA-4A34-A1D0-E354F4BAA832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91AD963-590C-4D9F-B78F-8A8DF53D7595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91AD963-590C-4D9F-B78F-8A8DF53D7595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91AD963-590C-4D9F-B78F-8A8DF53D7595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91AD963-590C-4D9F-B78F-8A8DF53D7595}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

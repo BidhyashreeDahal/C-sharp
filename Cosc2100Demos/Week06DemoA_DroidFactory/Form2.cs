@@ -73,6 +73,11 @@ namespace Week06DemoA_DroidFactory
         }
 
         #endregion
+
+        private void grpCreator_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

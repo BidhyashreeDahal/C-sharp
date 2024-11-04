@@ -21,10 +21,11 @@ namespace Exercise02
         /// </summary>
         public class Spider
         {
-            /// <summary>
-            /// Static field to generate unique spiderID for each spider instance 
-            /// </summary>
-            private static int _autoIncrementID = 1;
+        #region Fields
+        /// <summary>
+        /// Static field to generate unique spiderID for each spider instance 
+        /// </summary>
+        private static int _autoIncrementID = 1;
 
             /// <summary>
             /// Gets the unique identifier for the spider. 

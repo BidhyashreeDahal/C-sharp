@@ -75,6 +75,7 @@
             this.grpCreator.TabIndex = 6;
             this.grpCreator.TabStop = false;
             this.grpCreator.Text = "Droid Creator";
+            this.grpCreator.Enter += new System.EventHandler(this.grpCreator_Enter);
             // 
             // btnCancel
             // 

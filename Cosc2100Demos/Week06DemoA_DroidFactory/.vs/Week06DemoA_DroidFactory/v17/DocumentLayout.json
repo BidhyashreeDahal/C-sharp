@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\cosc2100demos\\week06demoa_droidfactory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\cosc2100demos\\week06demoa_droidfactory\\droid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:droid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\cosc2100demos\\week06demoa_droidfactory\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|d:\\courses\\cosc2100\\repo\\cosc2100\\cosc2100demos\\week06demoa_droidfactory\\frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\droid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:droid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A64FD5-C18A-49CD-916C-AFC41A39E1E9}|Week06DemoA_DroidFactory.csproj|solutionrelative:frminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:52:35.216Z",
               "EditorCaption": ""
@@ -79,46 +79,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "frmInputBox.cs",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\frmInputBox.cs",
               "RelativeDocumentMoniker": "frmInputBox.cs",
               "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\frmInputBox.cs",
               "RelativeToolTip": "frmInputBox.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T17:40:02.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAiwJwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwBwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T16:51:29.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:51:19.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "frmInputBox.cs [Design]",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\frmInputBox.cs",
               "RelativeDocumentMoniker": "frmInputBox.cs",
@@ -130,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -142,15 +129,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Droid.cs",
               "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Droid.cs",
               "RelativeDocumentMoniker": "Droid.cs",
               "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Droid.cs",
               "RelativeToolTip": "Droid.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAADwv2AAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwE8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T16:51:00.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Form2.Designer.cs",
+              "ToolTip": "D:\\courses\\COSC2100\\Repo\\COSC2100\\Cosc2100Demos\\Week06DemoA_DroidFactory\\Form2.Designer.cs",
+              "RelativeToolTip": "Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T03:17:49.014Z",
               "EditorCaption": ""
             }
           ]

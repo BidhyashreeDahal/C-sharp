@@ -1,0 +1,12 @@
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\bin\Debug\Assignment 3D&D.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\bin\Debug\Assignment 3D&D.exe
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\bin\Debug\Assignment 3D&D.pdb
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment 3D&D.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment_3D_D.SplashForm.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment_3D_D.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment 3D&D.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment 3D&D.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment 3D&D.exe
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment 3D&D.pdb
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment_3D_D.MainForm.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Assignment 3D&D\obj\Debug\Assignment_3D_D.frmEditor.resources
