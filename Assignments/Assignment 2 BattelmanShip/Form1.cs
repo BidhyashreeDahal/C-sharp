@@ -33,8 +33,8 @@ namespace Assignment_2_BattelmanShip
         private void Initialized_Board()
         {
             // Setting the DataGridView to be 10x10
-            dgv1.RowCount = BS.MAX_BOARD_SIZE;
-            dgv1.ColumnCount = BS.MAX_BOARD_SIZE;
+            dgv1.RowCount = BS.MAX_BOARD_SIZE +1 ;
+            dgv1.ColumnCount = BS.MAX_BOARD_SIZE +1;
 
             // setting the size for each column and column to make it look like a grid
             foreach (DataGridViewColumn col in dgv1.Columns)
@@ -69,12 +69,12 @@ namespace Assignment_2_BattelmanShip
         private void InitializeDataGridViews()
         {
            
-                dgv1.ColumnCount = BS.MAX_BOARD_SIZE ; 
-                dgv1.RowCount = BS.MAX_BOARD_SIZE ;    
+                dgv1.ColumnCount = BS.MAX_BOARD_SIZE+1 ; 
+                dgv1.RowCount = BS.MAX_BOARD_SIZE+1 ;    
 
-                for (int i = 0; i < BS.MAX_BOARD_SIZE; i++)
+                for (int i = 0; i < BS.MAX_BOARD_SIZE+1; i++)
                 {
-                    for (int j = 0; j < BS.MAX_BOARD_SIZE; j++)
+                    for (int j = 0; j < BS.MAX_BOARD_SIZE + 1; j++)
                     {
                         // Creating and applying cell style  
                         DataGridViewCellStyle cellStyle = new DataGridViewCellStyle
@@ -124,7 +124,7 @@ namespace Assignment_2_BattelmanShip
                     int adjustedY = y - 1; // Row index
 
                     // Check if the adjusted coordinates are valid
-                    if (adjustedX >= 0 && adjustedX < BS.MAX_BOARD_SIZE && adjustedY >= 0 && adjustedY < BS.MAX_BOARD_SIZE)
+                    if (adjustedX >= 0 && adjustedX < BS.MAX_BOARD_SIZE+1&& adjustedY >= 0 && adjustedY < BS.MAX_BOARD_SIZE + 1)
                     {
                         // Fire a missile at the selected coordinates
                         bool hit = BS.FireMissile(adjustedX, adjustedY);
@@ -170,8 +170,8 @@ namespace Assignment_2_BattelmanShip
             DataGridView clickedGrid = sender as DataGridView;//Sender refers to an object that was triggered.
 
 
-            if (clickedGrid != null && e.RowIndex >= 0 && e.RowIndex < BS.MAX_BOARD_SIZE &&
-                e.ColumnIndex >= 0 && e.ColumnIndex < BS.MAX_BOARD_SIZE)
+            if (clickedGrid != null && e.RowIndex >= 0 && e.RowIndex < BS.MAX_BOARD_SIZE + 1 &&
+                e.ColumnIndex >= 0 && e.ColumnIndex < BS.MAX_BOARD_SIZE+1)
             {
                 DataGridViewCell cell = clickedGrid.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 int x = e.RowIndex;
@@ -199,9 +199,9 @@ namespace Assignment_2_BattelmanShip
         private void btnShowBoat_Click(object sender, EventArgs e)
         {
             
-                for (int i = 0; i < BS.MAX_BOARD_SIZE; i++)
+                for (int i = 0; i < BS.MAX_BOARD_SIZE + 1; i++)
                 {
-                    for (int j = 0; j < BS.MAX_BOARD_SIZE; j++)
+                    for (int j = 0; j < BS.MAX_BOARD_SIZE+1; j++)
                     {
                         if (boatPositions[i, j] == Boats.Submarine)// Check if there's a boat
                         {
@@ -252,7 +252,7 @@ namespace Assignment_2_BattelmanShip
         private void UpdateBoardVisuals(DataGridView grid, int x, int y, bool hit)
         {
             {
-                if (x >= 0 && x < BS.MAX_BOARD_SIZE && y >= 0 && y < BS.MAX_BOARD_SIZE) 
+                if (x >= 0 && x < BS.MAX_BOARD_SIZE + 1 && y >= 0 && y < BS.MAX_BOARD_SIZE+1) 
                 {
                     DataGridViewCell cell = grid.Rows[x].Cells[y]; 
                     cell.Style.BackColor = hit ? Color.Red : Color.Green;
@@ -304,9 +304,9 @@ namespace Assignment_2_BattelmanShip
         private void ResetDataGridViews()
         {
             
-                for (int i = 0; i < BS.MAX_BOARD_SIZE; i++)
+                for (int i = 0; i < BS.MAX_BOARD_SIZE + 1; i++)
                 {
-                    for (int j = 0; j < BS.MAX_BOARD_SIZE; j++)
+                    for (int j = 0; j < BS.MAX_BOARD_SIZE+1; j++)
                     {
                         dgv1.Rows[i].Cells[j].Style.BackColor = Color.LightBlue; // Reset color  
                         dgv1.Rows[i].Cells[j].Value = ""; // Reset cell value  
