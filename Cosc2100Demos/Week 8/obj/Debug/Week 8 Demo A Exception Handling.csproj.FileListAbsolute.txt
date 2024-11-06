@@ -1,0 +1,10 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\bin\Debug\Week 8.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\bin\Debug\Week 8.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\bin\Debug\Week 8.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week 8 Demo A Exception Handling.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week_8.Form1.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week_8.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week 8 Demo A Exception Handling.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week 8 Demo A Exception Handling.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week 8.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week 8\obj\Debug\Week 8.pdb
