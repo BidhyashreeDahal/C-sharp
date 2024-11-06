@@ -94,35 +94,35 @@ namespace Assignment_3D_D
             {
                 if (Characters.SelectedIndex == 0)
                 {
-                    txtStory.Text = "Aragon belongs to Barabians class. Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. " +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to Barabians class. Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. " +
                         "More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator’s ferocity, a storm’s fury, and a sea’s turmoil.";
                 }
                 if (Characters.SelectedIndex == 1)
                 {
-                    txtStory.Text = "Legolas belongs to Bards class. Bards are invoking magic through music, dance, and verse, Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions. " +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to Bards class. Bards are invoking magic through music, dance, and verse, Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions. " +
                         "Bards believe the multiverse was spoken into existence and that remnants of its Words of Creation still resound and glimmer on every plane of existence." +
                         " Bardic magic attempts to harness those words, which transcend any language.";
                 }
                 if(Characters.SelectedIndex == 2)
                 {
-                    txtStory.Text = "Megola belongs to Clerics class. Clerics draw power from the realms of the gods and harness it to work miracles." +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to Clerics class. Clerics draw power from the realms of the gods and harness it to work miracles." +
                         " Blessed by a deity, a pantheon, or another immortal entity," +
                         " a Cleric can reach out to the divine magic of the Outer Planes—where gods dwell—and channel it to bolster people and battle foes.";
                 }
                 if (Characters.SelectedIndex == 3) 
                 {
-                    txtStory.Text = "Gandalf belongs to druids class. Druids belong to ancient orders that call on the forces of nature." +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to druids class. Druids belong to ancient orders that call on the forces of nature." +
                         " Harnessing the magic of animals, plants, and the four elements, Druids heal," +
                         " transform into animals, and wield elemental destruction.";
                 }
                 if(Characters.SelectedIndex == 4) 
                 {
-                    txtStory.Text = "Saruman belongs to fighter class. Fighters rule many battlefields. Questing knights, royal champions, elite soldiers, and hardened mercenaries—as Fighters," +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to fighter class. Fighters rule many battlefields. Questing knights, royal champions, elite soldiers, and hardened mercenaries—as Fighters," +
                         " they all share an unparalleled prowess with weapons and armor. And they are well acquainted with death, both meting it out and defying it.";
                 }
                 if(Characters.SelectedIndex == 5)
                 {
-                    txtStory.Text = "Solaman belongs to wizard class. Wizards are defined by their exhaustive study of magic’s inner workings." +
+                    txtStory.Text = $"{Characters.SelectedItem.ToString()} belongs to wizard class. Wizards are defined by their exhaustive study of magic’s inner workings." +
                         " They cast spells of explosive fire, arcing lightning, subtle deception, and spectacular transformations. " +
                         "Their magic conjures monsters from other planes of existence, glimpses the future, or forms protective barriers. " +
                         "Their mightiest spells change one substance into another, call meteors from the sky, or open portals to other worlds.";

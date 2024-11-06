@@ -39,6 +39,24 @@
             this.lblClass = new System.Windows.Forms.Label();
             this.lblCharacter = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblCostDexterityValue = new System.Windows.Forms.Label();
+            this.lblCostConstitutionValue = new System.Windows.Forms.Label();
+            this.lblCostIntelligenceValue = new System.Windows.Forms.Label();
+            this.lblCostWisdomValue = new System.Windows.Forms.Label();
+            this.lblCostCharismaValue = new System.Windows.Forms.Label();
+            this.lblCostStrength = new System.Windows.Forms.Label();
+            this.lblCostDexteritry = new System.Windows.Forms.Label();
+            this.lblCostConstitution = new System.Windows.Forms.Label();
+            this.lblCostIntelligence = new System.Windows.Forms.Label();
+            this.lblCostWisdom = new System.Windows.Forms.Label();
+            this.lblCostCharisma = new System.Windows.Forms.Label();
+            this.lblCostStrengthValue = new System.Windows.Forms.Label();
+            this.lblWisdomBonus = new System.Windows.Forms.Label();
+            this.lblCharismaBonus = new System.Windows.Forms.Label();
+            this.lblIntelligenceBonus = new System.Windows.Forms.Label();
+            this.lblConstitutionBonus = new System.Windows.Forms.Label();
+            this.lblDexterityBonus = new System.Windows.Forms.Label();
+            this.lblStrengthBonus = new System.Windows.Forms.Label();
             this.lblRemainingPointValue = new System.Windows.Forms.Label();
             this.lblRemainingPoints = new System.Windows.Forms.Label();
             this.nudDexterity = new System.Windows.Forms.NumericUpDown();
@@ -55,6 +73,8 @@
             this.lblStrength = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.grpCreateOrEdit = new System.Windows.Forms.GroupBox();
+            this.btnAllocatePoint = new System.Windows.Forms.Button();
+            this.cboGender = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nudAC = new System.Windows.Forms.NumericUpDown();
             this.nudInitiative = new System.Windows.Forms.NumericUpDown();
@@ -69,26 +89,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.cboGender = new System.Windows.Forms.ComboBox();
-            this.lblStrengthBonus = new System.Windows.Forms.Label();
-            this.lblDexterityBonus = new System.Windows.Forms.Label();
-            this.lblConstitutionBonus = new System.Windows.Forms.Label();
-            this.lblIntelligenceBonus = new System.Windows.Forms.Label();
-            this.lblCharismaBonus = new System.Windows.Forms.Label();
-            this.lblWisdomBonus = new System.Windows.Forms.Label();
-            this.lblCostStrengthValue = new System.Windows.Forms.Label();
-            this.lblCostCharisma = new System.Windows.Forms.Label();
-            this.lblCostWisdom = new System.Windows.Forms.Label();
-            this.lblCostIntelligence = new System.Windows.Forms.Label();
-            this.lblCostConstitution = new System.Windows.Forms.Label();
-            this.lblCostDexteritry = new System.Windows.Forms.Label();
-            this.lblCostStrength = new System.Windows.Forms.Label();
-            this.lblCostCharismaValue = new System.Windows.Forms.Label();
-            this.lblCostWisdomValue = new System.Windows.Forms.Label();
-            this.lblCostIntelligenceValue = new System.Windows.Forms.Label();
-            this.lblCostConstitutionValue = new System.Windows.Forms.Label();
-            this.lblCostDexterityValue = new System.Windows.Forms.Label();
-            this.btnAllocatePoint = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel2.SuspendLayout();
@@ -235,6 +235,156 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(537, 403);
             this.panel2.TabIndex = 13;
+            // 
+            // lblCostDexterityValue
+            // 
+            this.lblCostDexterityValue.AutoSize = true;
+            this.lblCostDexterityValue.Location = new System.Drawing.Point(452, 111);
+            this.lblCostDexterityValue.Name = "lblCostDexterityValue";
+            this.lblCostDexterityValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostDexterityValue.TabIndex = 42;
+            // 
+            // lblCostConstitutionValue
+            // 
+            this.lblCostConstitutionValue.AutoSize = true;
+            this.lblCostConstitutionValue.Location = new System.Drawing.Point(452, 152);
+            this.lblCostConstitutionValue.Name = "lblCostConstitutionValue";
+            this.lblCostConstitutionValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostConstitutionValue.TabIndex = 41;
+            // 
+            // lblCostIntelligenceValue
+            // 
+            this.lblCostIntelligenceValue.AutoSize = true;
+            this.lblCostIntelligenceValue.Location = new System.Drawing.Point(452, 197);
+            this.lblCostIntelligenceValue.Name = "lblCostIntelligenceValue";
+            this.lblCostIntelligenceValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostIntelligenceValue.TabIndex = 40;
+            // 
+            // lblCostWisdomValue
+            // 
+            this.lblCostWisdomValue.AutoSize = true;
+            this.lblCostWisdomValue.Location = new System.Drawing.Point(452, 245);
+            this.lblCostWisdomValue.Name = "lblCostWisdomValue";
+            this.lblCostWisdomValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostWisdomValue.TabIndex = 39;
+            // 
+            // lblCostCharismaValue
+            // 
+            this.lblCostCharismaValue.AutoSize = true;
+            this.lblCostCharismaValue.Location = new System.Drawing.Point(452, 298);
+            this.lblCostCharismaValue.Name = "lblCostCharismaValue";
+            this.lblCostCharismaValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostCharismaValue.TabIndex = 38;
+            // 
+            // lblCostStrength
+            // 
+            this.lblCostStrength.AutoSize = true;
+            this.lblCostStrength.Location = new System.Drawing.Point(383, 58);
+            this.lblCostStrength.Name = "lblCostStrength";
+            this.lblCostStrength.Size = new System.Drawing.Size(63, 25);
+            this.lblCostStrength.TabIndex = 37;
+            this.lblCostStrength.Text = "Cost :";
+            // 
+            // lblCostDexteritry
+            // 
+            this.lblCostDexteritry.AutoSize = true;
+            this.lblCostDexteritry.Location = new System.Drawing.Point(383, 112);
+            this.lblCostDexteritry.Name = "lblCostDexteritry";
+            this.lblCostDexteritry.Size = new System.Drawing.Size(63, 25);
+            this.lblCostDexteritry.TabIndex = 36;
+            this.lblCostDexteritry.Text = "Cost :";
+            // 
+            // lblCostConstitution
+            // 
+            this.lblCostConstitution.AutoSize = true;
+            this.lblCostConstitution.Location = new System.Drawing.Point(383, 152);
+            this.lblCostConstitution.Name = "lblCostConstitution";
+            this.lblCostConstitution.Size = new System.Drawing.Size(63, 25);
+            this.lblCostConstitution.TabIndex = 35;
+            this.lblCostConstitution.Text = "Cost :";
+            // 
+            // lblCostIntelligence
+            // 
+            this.lblCostIntelligence.AutoSize = true;
+            this.lblCostIntelligence.Location = new System.Drawing.Point(383, 197);
+            this.lblCostIntelligence.Name = "lblCostIntelligence";
+            this.lblCostIntelligence.Size = new System.Drawing.Size(63, 25);
+            this.lblCostIntelligence.TabIndex = 34;
+            this.lblCostIntelligence.Text = "Cost :";
+            // 
+            // lblCostWisdom
+            // 
+            this.lblCostWisdom.AutoSize = true;
+            this.lblCostWisdom.Location = new System.Drawing.Point(383, 244);
+            this.lblCostWisdom.Name = "lblCostWisdom";
+            this.lblCostWisdom.Size = new System.Drawing.Size(63, 25);
+            this.lblCostWisdom.TabIndex = 33;
+            this.lblCostWisdom.Text = "Cost :";
+            // 
+            // lblCostCharisma
+            // 
+            this.lblCostCharisma.AutoSize = true;
+            this.lblCostCharisma.Location = new System.Drawing.Point(383, 298);
+            this.lblCostCharisma.Name = "lblCostCharisma";
+            this.lblCostCharisma.Size = new System.Drawing.Size(63, 25);
+            this.lblCostCharisma.TabIndex = 32;
+            this.lblCostCharisma.Text = "Cost :";
+            // 
+            // lblCostStrengthValue
+            // 
+            this.lblCostStrengthValue.AutoSize = true;
+            this.lblCostStrengthValue.Location = new System.Drawing.Point(452, 58);
+            this.lblCostStrengthValue.Name = "lblCostStrengthValue";
+            this.lblCostStrengthValue.Size = new System.Drawing.Size(0, 25);
+            this.lblCostStrengthValue.TabIndex = 31;
+            // 
+            // lblWisdomBonus
+            // 
+            this.lblWisdomBonus.AutoSize = true;
+            this.lblWisdomBonus.Location = new System.Drawing.Point(128, 240);
+            this.lblWisdomBonus.Name = "lblWisdomBonus";
+            this.lblWisdomBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblWisdomBonus.TabIndex = 30;
+            // 
+            // lblCharismaBonus
+            // 
+            this.lblCharismaBonus.AutoSize = true;
+            this.lblCharismaBonus.Location = new System.Drawing.Point(128, 298);
+            this.lblCharismaBonus.Name = "lblCharismaBonus";
+            this.lblCharismaBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblCharismaBonus.TabIndex = 29;
+            // 
+            // lblIntelligenceBonus
+            // 
+            this.lblIntelligenceBonus.AutoSize = true;
+            this.lblIntelligenceBonus.Location = new System.Drawing.Point(128, 197);
+            this.lblIntelligenceBonus.Name = "lblIntelligenceBonus";
+            this.lblIntelligenceBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblIntelligenceBonus.TabIndex = 28;
+            // 
+            // lblConstitutionBonus
+            // 
+            this.lblConstitutionBonus.AutoSize = true;
+            this.lblConstitutionBonus.Location = new System.Drawing.Point(128, 152);
+            this.lblConstitutionBonus.Name = "lblConstitutionBonus";
+            this.lblConstitutionBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblConstitutionBonus.TabIndex = 27;
+            // 
+            // lblDexterityBonus
+            // 
+            this.lblDexterityBonus.AutoSize = true;
+            this.lblDexterityBonus.Location = new System.Drawing.Point(128, 110);
+            this.lblDexterityBonus.Name = "lblDexterityBonus";
+            this.lblDexterityBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblDexterityBonus.TabIndex = 26;
+            // 
+            // lblStrengthBonus
+            // 
+            this.lblStrengthBonus.AutoSize = true;
+            this.lblStrengthBonus.Location = new System.Drawing.Point(128, 59);
+            this.lblStrengthBonus.Name = "lblStrengthBonus";
+            this.lblStrengthBonus.Size = new System.Drawing.Size(0, 25);
+            this.lblStrengthBonus.TabIndex = 25;
             // 
             // lblRemainingPointValue
             // 
@@ -392,6 +542,28 @@
             this.grpCreateOrEdit.TabStop = false;
             this.grpCreateOrEdit.Text = "Character Details";
             // 
+            // btnAllocatePoint
+            // 
+            this.btnAllocatePoint.Font = new System.Drawing.Font("Algerian", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllocatePoint.Location = new System.Drawing.Point(1045, 556);
+            this.btnAllocatePoint.Name = "btnAllocatePoint";
+            this.btnAllocatePoint.Size = new System.Drawing.Size(139, 54);
+            this.btnAllocatePoint.TabIndex = 12;
+            this.btnAllocatePoint.Text = "&Allocate Point";
+            this.toolTip1.SetToolTip(this.btnAllocatePoint, "Click to allocate Point(alt+A)");
+            this.btnAllocatePoint.UseVisualStyleBackColor = true;
+            this.btnAllocatePoint.Click += new System.EventHandler(this.btnAllocatePoint_Click);
+            // 
+            // cboGender
+            // 
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Location = new System.Drawing.Point(172, 274);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(227, 33);
+            this.cboGender.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.cboGender, "Chhose the Gender");
+            this.cboGender.SelectedIndexChanged += new System.EventHandler(this.cboGender_SelectedIndexChanged);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -530,178 +702,6 @@
             this.toolTip1.SetToolTip(this.btnSave, "Click to save the character");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // cboGender
-            // 
-            this.cboGender.FormattingEnabled = true;
-            this.cboGender.Location = new System.Drawing.Point(172, 274);
-            this.cboGender.Name = "cboGender";
-            this.cboGender.Size = new System.Drawing.Size(227, 33);
-            this.cboGender.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.cboGender, "Chhose the Gender");
-            this.cboGender.SelectedIndexChanged += new System.EventHandler(this.cboGender_SelectedIndexChanged);
-            // 
-            // lblStrengthBonus
-            // 
-            this.lblStrengthBonus.AutoSize = true;
-            this.lblStrengthBonus.Location = new System.Drawing.Point(128, 59);
-            this.lblStrengthBonus.Name = "lblStrengthBonus";
-            this.lblStrengthBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblStrengthBonus.TabIndex = 25;
-            // 
-            // lblDexterityBonus
-            // 
-            this.lblDexterityBonus.AutoSize = true;
-            this.lblDexterityBonus.Location = new System.Drawing.Point(128, 110);
-            this.lblDexterityBonus.Name = "lblDexterityBonus";
-            this.lblDexterityBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblDexterityBonus.TabIndex = 26;
-            // 
-            // lblConstitutionBonus
-            // 
-            this.lblConstitutionBonus.AutoSize = true;
-            this.lblConstitutionBonus.Location = new System.Drawing.Point(128, 152);
-            this.lblConstitutionBonus.Name = "lblConstitutionBonus";
-            this.lblConstitutionBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblConstitutionBonus.TabIndex = 27;
-            // 
-            // lblIntelligenceBonus
-            // 
-            this.lblIntelligenceBonus.AutoSize = true;
-            this.lblIntelligenceBonus.Location = new System.Drawing.Point(128, 197);
-            this.lblIntelligenceBonus.Name = "lblIntelligenceBonus";
-            this.lblIntelligenceBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblIntelligenceBonus.TabIndex = 28;
-            // 
-            // lblCharismaBonus
-            // 
-            this.lblCharismaBonus.AutoSize = true;
-            this.lblCharismaBonus.Location = new System.Drawing.Point(128, 298);
-            this.lblCharismaBonus.Name = "lblCharismaBonus";
-            this.lblCharismaBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblCharismaBonus.TabIndex = 29;
-            // 
-            // lblWisdomBonus
-            // 
-            this.lblWisdomBonus.AutoSize = true;
-            this.lblWisdomBonus.Location = new System.Drawing.Point(128, 240);
-            this.lblWisdomBonus.Name = "lblWisdomBonus";
-            this.lblWisdomBonus.Size = new System.Drawing.Size(0, 25);
-            this.lblWisdomBonus.TabIndex = 30;
-            // 
-            // lblCostStrengthValue
-            // 
-            this.lblCostStrengthValue.AutoSize = true;
-            this.lblCostStrengthValue.Location = new System.Drawing.Point(452, 58);
-            this.lblCostStrengthValue.Name = "lblCostStrengthValue";
-            this.lblCostStrengthValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostStrengthValue.TabIndex = 31;
-            // 
-            // lblCostCharisma
-            // 
-            this.lblCostCharisma.AutoSize = true;
-            this.lblCostCharisma.Location = new System.Drawing.Point(383, 298);
-            this.lblCostCharisma.Name = "lblCostCharisma";
-            this.lblCostCharisma.Size = new System.Drawing.Size(63, 25);
-            this.lblCostCharisma.TabIndex = 32;
-            this.lblCostCharisma.Text = "Cost :";
-            // 
-            // lblCostWisdom
-            // 
-            this.lblCostWisdom.AutoSize = true;
-            this.lblCostWisdom.Location = new System.Drawing.Point(383, 244);
-            this.lblCostWisdom.Name = "lblCostWisdom";
-            this.lblCostWisdom.Size = new System.Drawing.Size(63, 25);
-            this.lblCostWisdom.TabIndex = 33;
-            this.lblCostWisdom.Text = "Cost :";
-            // 
-            // lblCostIntelligence
-            // 
-            this.lblCostIntelligence.AutoSize = true;
-            this.lblCostIntelligence.Location = new System.Drawing.Point(383, 197);
-            this.lblCostIntelligence.Name = "lblCostIntelligence";
-            this.lblCostIntelligence.Size = new System.Drawing.Size(63, 25);
-            this.lblCostIntelligence.TabIndex = 34;
-            this.lblCostIntelligence.Text = "Cost :";
-            // 
-            // lblCostConstitution
-            // 
-            this.lblCostConstitution.AutoSize = true;
-            this.lblCostConstitution.Location = new System.Drawing.Point(383, 152);
-            this.lblCostConstitution.Name = "lblCostConstitution";
-            this.lblCostConstitution.Size = new System.Drawing.Size(63, 25);
-            this.lblCostConstitution.TabIndex = 35;
-            this.lblCostConstitution.Text = "Cost :";
-            // 
-            // lblCostDexteritry
-            // 
-            this.lblCostDexteritry.AutoSize = true;
-            this.lblCostDexteritry.Location = new System.Drawing.Point(383, 112);
-            this.lblCostDexteritry.Name = "lblCostDexteritry";
-            this.lblCostDexteritry.Size = new System.Drawing.Size(63, 25);
-            this.lblCostDexteritry.TabIndex = 36;
-            this.lblCostDexteritry.Text = "Cost :";
-            // 
-            // lblCostStrength
-            // 
-            this.lblCostStrength.AutoSize = true;
-            this.lblCostStrength.Location = new System.Drawing.Point(383, 58);
-            this.lblCostStrength.Name = "lblCostStrength";
-            this.lblCostStrength.Size = new System.Drawing.Size(63, 25);
-            this.lblCostStrength.TabIndex = 37;
-            this.lblCostStrength.Text = "Cost :";
-            // 
-            // lblCostCharismaValue
-            // 
-            this.lblCostCharismaValue.AutoSize = true;
-            this.lblCostCharismaValue.Location = new System.Drawing.Point(452, 298);
-            this.lblCostCharismaValue.Name = "lblCostCharismaValue";
-            this.lblCostCharismaValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostCharismaValue.TabIndex = 38;
-            // 
-            // lblCostWisdomValue
-            // 
-            this.lblCostWisdomValue.AutoSize = true;
-            this.lblCostWisdomValue.Location = new System.Drawing.Point(452, 245);
-            this.lblCostWisdomValue.Name = "lblCostWisdomValue";
-            this.lblCostWisdomValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostWisdomValue.TabIndex = 39;
-            // 
-            // lblCostIntelligenceValue
-            // 
-            this.lblCostIntelligenceValue.AutoSize = true;
-            this.lblCostIntelligenceValue.Location = new System.Drawing.Point(452, 197);
-            this.lblCostIntelligenceValue.Name = "lblCostIntelligenceValue";
-            this.lblCostIntelligenceValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostIntelligenceValue.TabIndex = 40;
-            // 
-            // lblCostConstitutionValue
-            // 
-            this.lblCostConstitutionValue.AutoSize = true;
-            this.lblCostConstitutionValue.Location = new System.Drawing.Point(452, 152);
-            this.lblCostConstitutionValue.Name = "lblCostConstitutionValue";
-            this.lblCostConstitutionValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostConstitutionValue.TabIndex = 41;
-            // 
-            // lblCostDexterityValue
-            // 
-            this.lblCostDexterityValue.AutoSize = true;
-            this.lblCostDexterityValue.Location = new System.Drawing.Point(452, 111);
-            this.lblCostDexterityValue.Name = "lblCostDexterityValue";
-            this.lblCostDexterityValue.Size = new System.Drawing.Size(0, 25);
-            this.lblCostDexterityValue.TabIndex = 42;
-            // 
-            // btnAllocatePoint
-            // 
-            this.btnAllocatePoint.Font = new System.Drawing.Font("Algerian", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllocatePoint.Location = new System.Drawing.Point(1045, 556);
-            this.btnAllocatePoint.Name = "btnAllocatePoint";
-            this.btnAllocatePoint.Size = new System.Drawing.Size(139, 54);
-            this.btnAllocatePoint.TabIndex = 12;
-            this.btnAllocatePoint.Text = "&Allocate Point";
-            this.toolTip1.SetToolTip(this.btnAllocatePoint, "Click to allocate Point(alt+A)");
-            this.btnAllocatePoint.UseVisualStyleBackColor = true;
-            this.btnAllocatePoint.Click += new System.EventHandler(this.btnAllocatePoint_Click);
             // 
             // btnReset
             // 

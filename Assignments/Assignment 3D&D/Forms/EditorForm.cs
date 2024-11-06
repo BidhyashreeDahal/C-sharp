@@ -58,6 +58,7 @@ namespace Assignment_3D_D
             PopulateRace();
             PopulateClass();
             PopulateGender();
+           
             if (isNewCharacter)
             {
                 ClearScreen(); // Clear screen if creating a new character
@@ -216,8 +217,8 @@ namespace Assignment_3D_D
             Character tempCharacter = new Character();
             tempCharacter.Name =this.txtCharacterName.Text;
             tempCharacter.Alignments = (Constants.Alignments)this.cboAlignment.SelectedIndex;
-            tempCharacter.CharacterClass = Classes.Classes.FindClass(cboClass.SelectedIndex.ToString());
-            tempCharacter.CharacterRace = Classes.Race.FindRace(cboRace.SelectedIndex.ToString());
+            tempCharacter.CharacterClass = Classes.Classes.FindClass(this.cboClass.SelectedItem.ToString());
+            tempCharacter.CharacterRace = Race.FindRace(this.cboRace.SelectedItem.ToString());
             tempCharacter.Gender = (Constants.Gender)this.cboGender.SelectedIndex;
             tempCharacter.Strength = (Constants.Attributes)int.Parse(lblStrengthBonus.Text);
             tempCharacter.Constitution =(Constants.Attributes)int.Parse(lblConstitutionBonus.Text);
@@ -243,12 +244,16 @@ namespace Assignment_3D_D
 
             
             character.Strength = (Constants.Attributes)int.Parse(lblStrengthBonus.Text);
+            
             character.Dexterity = (Constants.Attributes)int.Parse(lblDexterityBonus.Text);
             character.Constitution = (Constants.Attributes)int.Parse(lblConstitutionBonus.Text);
             character.Intelligence = (Constants.Attributes)int.Parse(lblIntelligenceBonus.Text);
             character.Wisdom = (Constants.Attributes)int.Parse(lblWisdomBonus.Text);
             character.Charisma = (Constants.Attributes)int.Parse(lblCharismaBonus.Text);
             character.remainingPoints = int.Parse(lblRemainingPointValue.Text);
+
+
+            
         }
         #endregion
 
@@ -296,6 +301,7 @@ namespace Assignment_3D_D
             if (isNewCharacter)
             {
                 CreateCharacter();
+                
 
             }
             else
@@ -307,6 +313,9 @@ namespace Assignment_3D_D
                     Character.Characters[index] = character; // Update existing character
                 }
             }
+           
+            this.DialogResult = DialogResult.OK;
+            this.Close();
             #endregion
         }
         #region Screen Clear

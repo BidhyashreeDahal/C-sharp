@@ -201,13 +201,15 @@ namespace Assignment_3D_D.Classes
         /// </summary>
         public void ApplyDefaultClassBonuses()
         {
-           
-            Strength += CharacterClass.Strength;
-            Dexterity += CharacterClass.Dexterity;
-            Constitution += CharacterClass.Constitution;
-            Intelligence += CharacterClass.Intelligence;
-            Wisdom += CharacterClass.Wisdom;
-            Charisma += CharacterClass.Charisma;
+            if(CharacterClass!= null)
+            {
+                Strength += CharacterClass.Strength;
+                Dexterity += CharacterClass.Dexterity;
+                Constitution += CharacterClass.Constitution;
+                Intelligence += CharacterClass.Intelligence;
+                Wisdom += CharacterClass.Wisdom;
+                Charisma += CharacterClass.Charisma;
+            }
         }
         #endregion
         #region Point Allocation
