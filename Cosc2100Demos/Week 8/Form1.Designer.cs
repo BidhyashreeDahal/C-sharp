@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.nud2 = new System.Windows.Forms.NumericUpDown();
             this.lblAnswer = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.nud1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud2)).BeginInit();
             this.SuspendLayout();
@@ -77,10 +78,10 @@
             // 
             this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(57, 492);
+            this.lblMessage.Location = new System.Drawing.Point(48, 412);
             this.lblMessage.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(1072, 193);
+            this.lblMessage.Size = new System.Drawing.Size(686, 177);
             this.lblMessage.TabIndex = 2;
             this.lblMessage.Text = "-";
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -94,6 +95,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "=";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nud2
             // 
@@ -123,11 +125,15 @@
             this.lblAnswer.TabIndex = 5;
             this.lblAnswer.Text = "0";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 765);
+            this.ClientSize = new System.Drawing.Size(822, 610);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.nud2);
             this.Controls.Add(this.button1);
@@ -155,6 +161,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown nud2;
         private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

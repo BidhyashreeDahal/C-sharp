@@ -1,5 +1,5 @@
 ﻿/*
- * Title :Race.cs
+ * Title :MainForm.cs
  * Name : Bidhyashree Dahal
  * Student ID :100952513
  * The purpose of this file is to create a user interface showcasing the available characters. And It allows the users

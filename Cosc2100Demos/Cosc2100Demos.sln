@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise02", "Exercise02\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week 8 Demo A Exception Handling", "Week 8\Week 8 Demo A Exception Handling.csproj", "{D9AA173A-92F4-466E-ABD3-5F5EC2CA5E22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week11", "Week11\Week11.csproj", "{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D9AA173A-92F4-466E-ABD3-5F5EC2CA5E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9AA173A-92F4-466E-ABD3-5F5EC2CA5E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9AA173A-92F4-466E-ABD3-5F5EC2CA5E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

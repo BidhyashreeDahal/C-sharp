@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Week_8
 {
-    internal class MyMath
+    public static class MyMath
     {
+        
+        
     }
 }

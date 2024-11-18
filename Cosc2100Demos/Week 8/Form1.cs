@@ -21,5 +21,14 @@ namespace Week_8
         {
             cboOperator.SelectedIndex = 0;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double answer = 0;
+            switch (cboOperator.SelectedItem.ToString())
+            {
+
+            }
+        }
     }
 }

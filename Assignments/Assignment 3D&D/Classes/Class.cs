@@ -1,4 +1,4 @@
-﻿/* Title :Race.cs
+﻿/* Title :Class.cs
  * Name : Bidhyashree Dahal
  * Student ID :100952513
  * The purpose of this file is to Contain the classes of the character

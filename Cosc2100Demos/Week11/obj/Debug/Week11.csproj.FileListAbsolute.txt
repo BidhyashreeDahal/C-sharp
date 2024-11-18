@@ -1,0 +1,13 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\bin\Debug\Week11.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\bin\Debug\Week11.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\bin\Debug\Week11.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.Students.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.frmSplash.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.frmEmployees.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week11\obj\Debug\Week11.frmCountries.resources
