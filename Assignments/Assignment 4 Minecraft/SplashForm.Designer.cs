@@ -198,7 +198,6 @@
             this.Text = "SplashScreen";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.frmSplash_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

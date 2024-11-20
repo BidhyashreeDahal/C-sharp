@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tcMovement = new System.Windows.Forms.TabPage();
             this.chkInvertYAxis = new System.Windows.Forms.CheckBox();
             this.lblInvertYAxis = new System.Windows.Forms.Label();
@@ -75,7 +76,9 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.lbUniquelName = new System.Windows.Forms.Label();
-            this.lblNameValue = new System.Windows.Forms.Label();
+            this.txtnameValue = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tcMovement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudControllerSensitivity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMouseSensitivity)).BeginInit();
@@ -109,6 +112,7 @@
             this.tcMovement.Size = new System.Drawing.Size(648, 493);
             this.tcMovement.TabIndex = 3;
             this.tcMovement.Text = "Movement";
+            this.toolTip1.SetToolTip(this.tcMovement, "Click to change the clicked status");
             this.tcMovement.UseVisualStyleBackColor = true;
             // 
             // chkInvertYAxis
@@ -117,7 +121,8 @@
             this.chkInvertYAxis.Location = new System.Drawing.Point(165, 316);
             this.chkInvertYAxis.Name = "chkInvertYAxis";
             this.chkInvertYAxis.Size = new System.Drawing.Size(22, 21);
-            this.chkInvertYAxis.TabIndex = 10;
+            this.chkInvertYAxis.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.chkInvertYAxis, "Click to change the clicked status");
             this.chkInvertYAxis.UseVisualStyleBackColor = true;
             // 
             // lblInvertYAxis
@@ -146,6 +151,7 @@
             this.nudControllerSensitivity.Name = "nudControllerSensitivity";
             this.nudControllerSensitivity.Size = new System.Drawing.Size(120, 26);
             this.nudControllerSensitivity.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.nudControllerSensitivity, "Change the value of Controller Sensitivity");
             this.nudControllerSensitivity.Value = new decimal(new int[] {
             50,
             0,
@@ -177,7 +183,8 @@
             0});
             this.nudMouseSensitivity.Name = "nudMouseSensitivity";
             this.nudMouseSensitivity.Size = new System.Drawing.Size(120, 26);
-            this.nudMouseSensitivity.TabIndex = 6;
+            this.nudMouseSensitivity.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.nudMouseSensitivity, "Change the value of MouseSensitivity");
             this.nudMouseSensitivity.Value = new decimal(new int[] {
             50,
             0,
@@ -202,7 +209,7 @@
             this.chkAutoJump.Location = new System.Drawing.Point(165, 94);
             this.chkAutoJump.Name = "chkAutoJump";
             this.chkAutoJump.Size = new System.Drawing.Size(22, 21);
-            this.chkAutoJump.TabIndex = 4;
+            this.chkAutoJump.TabIndex = 6;
             this.chkAutoJump.UseVisualStyleBackColor = true;
             // 
             // lblAutoJump
@@ -225,7 +232,8 @@
             this.cboInputDevices.Location = new System.Drawing.Point(212, 37);
             this.cboInputDevices.Name = "cboInputDevices";
             this.cboInputDevices.Size = new System.Drawing.Size(185, 28);
-            this.cboInputDevices.TabIndex = 1;
+            this.cboInputDevices.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.cboInputDevices, "Click to change the Input device");
             // 
             // lblInputDevice
             // 
@@ -259,6 +267,7 @@
             this.trkSound.Name = "trkSound";
             this.trkSound.Size = new System.Drawing.Size(104, 69);
             this.trkSound.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.trkSound, "Click to change the Sound");
             this.trkSound.Value = 100;
             // 
             // trkMusic
@@ -269,6 +278,7 @@
             this.trkMusic.Name = "trkMusic";
             this.trkMusic.Size = new System.Drawing.Size(104, 69);
             this.trkMusic.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.trkMusic, "Click to change the Music");
             this.trkMusic.Value = 100;
             // 
             // lblSound
@@ -309,15 +319,17 @@
             // 
             // cboCameraProspective
             // 
+            this.cboCameraProspective.AllowDrop = true;
             this.cboCameraProspective.FormattingEnabled = true;
             this.cboCameraProspective.Items.AddRange(new object[] {
-            "First-Person",
-            "third-Person front",
-            "third-Person back"});
+            "FirstPerson",
+            "ThirdPersonFront",
+            "ThirdPersonBack"});
             this.cboCameraProspective.Location = new System.Drawing.Point(255, 159);
             this.cboCameraProspective.Name = "cboCameraProspective";
-            this.cboCameraProspective.Size = new System.Drawing.Size(121, 28);
-            this.cboCameraProspective.TabIndex = 5;
+            this.cboCameraProspective.Size = new System.Drawing.Size(221, 28);
+            this.cboCameraProspective.TabIndex = 28;
+            this.toolTip1.SetToolTip(this.cboCameraProspective, "Click to change the Camera Prespective");
             // 
             // chkShowCoordinates
             // 
@@ -325,7 +337,8 @@
             this.chkShowCoordinates.Location = new System.Drawing.Point(264, 95);
             this.chkShowCoordinates.Name = "chkShowCoordinates";
             this.chkShowCoordinates.Size = new System.Drawing.Size(22, 21);
-            this.chkShowCoordinates.TabIndex = 4;
+            this.chkShowCoordinates.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.chkShowCoordinates, "Click to change the clicked status");
             this.chkShowCoordinates.UseVisualStyleBackColor = true;
             // 
             // trkHuddTransparency
@@ -336,7 +349,8 @@
             this.trkHuddTransparency.Minimum = 25;
             this.trkHuddTransparency.Name = "trkHuddTransparency";
             this.trkHuddTransparency.Size = new System.Drawing.Size(104, 69);
-            this.trkHuddTransparency.TabIndex = 3;
+            this.trkHuddTransparency.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.trkHuddTransparency, "Change the HUDD Transparency");
             this.trkHuddTransparency.Value = 100;
             // 
             // lblCameraPerspective
@@ -382,7 +396,8 @@
             this.tcSettings.Name = "tcSettings";
             this.tcSettings.SelectedIndex = 0;
             this.tcSettings.Size = new System.Drawing.Size(656, 526);
-            this.tcSettings.TabIndex = 0;
+            this.tcSettings.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.tcSettings, "Click to change the Settings");
             // 
             // tcVideo
             // 
@@ -416,7 +431,8 @@
             this.chkUpscaling.Location = new System.Drawing.Point(533, 185);
             this.chkUpscaling.Name = "chkUpscaling";
             this.chkUpscaling.Size = new System.Drawing.Size(22, 21);
-            this.chkUpscaling.TabIndex = 15;
+            this.chkUpscaling.TabIndex = 25;
+            this.toolTip1.SetToolTip(this.chkUpscaling, "Click to change the clicked status");
             this.chkUpscaling.UseVisualStyleBackColor = true;
             // 
             // chkRayTracing
@@ -425,7 +441,8 @@
             this.chkRayTracing.Location = new System.Drawing.Point(230, 444);
             this.chkRayTracing.Name = "chkRayTracing";
             this.chkRayTracing.Size = new System.Drawing.Size(22, 21);
-            this.chkRayTracing.TabIndex = 14;
+            this.chkRayTracing.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.chkRayTracing, "Click to change the clicked status");
             this.chkRayTracing.UseVisualStyleBackColor = true;
             // 
             // trkFieldOfView
@@ -436,7 +453,8 @@
             this.trkFieldOfView.Minimum = 60;
             this.trkFieldOfView.Name = "trkFieldOfView";
             this.trkFieldOfView.Size = new System.Drawing.Size(104, 69);
-            this.trkFieldOfView.TabIndex = 13;
+            this.trkFieldOfView.TabIndex = 23;
+            this.toolTip1.SetToolTip(this.trkFieldOfView, "Change the Field Of View");
             this.trkFieldOfView.Value = 64;
             // 
             // nudRenderDistance
@@ -454,7 +472,8 @@
             0});
             this.nudRenderDistance.Name = "nudRenderDistance";
             this.nudRenderDistance.Size = new System.Drawing.Size(120, 26);
-            this.nudRenderDistance.TabIndex = 12;
+            this.nudRenderDistance.TabIndex = 22;
+            this.toolTip1.SetToolTip(this.nudRenderDistance, "Change the value of Render Distance");
             this.nudRenderDistance.Value = new decimal(new int[] {
             16,
             0,
@@ -467,7 +486,8 @@
             this.chkFullscreen.Location = new System.Drawing.Point(230, 238);
             this.chkFullscreen.Name = "chkFullscreen";
             this.chkFullscreen.Size = new System.Drawing.Size(22, 21);
-            this.chkFullscreen.TabIndex = 11;
+            this.chkFullscreen.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.chkFullscreen, "Click to change the clicked status");
             this.chkFullscreen.UseVisualStyleBackColor = true;
             // 
             // chkVSync
@@ -478,7 +498,8 @@
             this.chkVSync.Location = new System.Drawing.Point(230, 176);
             this.chkVSync.Name = "chkVSync";
             this.chkVSync.Size = new System.Drawing.Size(22, 21);
-            this.chkVSync.TabIndex = 10;
+            this.chkVSync.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.chkVSync, "Click to change the clicked status");
             this.chkVSync.UseVisualStyleBackColor = true;
             // 
             // chkFancyGraphics
@@ -489,7 +510,8 @@
             this.chkFancyGraphics.Location = new System.Drawing.Point(230, 114);
             this.chkFancyGraphics.Name = "chkFancyGraphics";
             this.chkFancyGraphics.Size = new System.Drawing.Size(22, 21);
-            this.chkFancyGraphics.TabIndex = 9;
+            this.chkFancyGraphics.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.chkFancyGraphics, "Click to change the clicked status");
             this.chkFancyGraphics.UseVisualStyleBackColor = true;
             // 
             // lblUpscaling
@@ -529,7 +551,8 @@
             this.trkBrightness.Maximum = 100;
             this.trkBrightness.Name = "trkBrightness";
             this.trkBrightness.Size = new System.Drawing.Size(126, 69);
-            this.trkBrightness.TabIndex = 5;
+            this.trkBrightness.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.trkBrightness, "Change the Brightness");
             this.trkBrightness.Value = 50;
             // 
             // lblFancyGraphics
@@ -595,8 +618,10 @@
             // 
             // lbxProfiles
             // 
+            this.lbxProfiles.BackColor = System.Drawing.Color.White;
             this.lbxProfiles.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbxProfiles.FormattingEnabled = true;
+            this.lbxProfiles.HorizontalExtent = 1;
             this.lbxProfiles.ItemHeight = 30;
             this.lbxProfiles.Location = new System.Drawing.Point(12, 138);
             this.lbxProfiles.Name = "lbxProfiles";
@@ -607,6 +632,7 @@
             // lblAvailableProfiles
             // 
             this.lblAvailableProfiles.AutoSize = true;
+            this.lblAvailableProfiles.BackColor = System.Drawing.Color.Transparent;
             this.lblAvailableProfiles.Font = new System.Drawing.Font("Papyrus", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvailableProfiles.Location = new System.Drawing.Point(33, 85);
             this.lblAvailableProfiles.Name = "lblAvailableProfiles";
@@ -616,29 +642,34 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackgroundImage = global::Assignment_4_Minecraft.Properties.Resources.OIP;
             this.btnSave.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(709, 589);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(152, 62);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Save";
+            this.btnSave.TabIndex = 30;
+            this.btnSave.Text = "&Save";
+            this.toolTip1.SetToolTip(this.btnSave, "Click here to Save the profile");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnLoad
             // 
+            this.btnLoad.BackgroundImage = global::Assignment_4_Minecraft.Properties.Resources.OIP;
             this.btnLoad.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.Location = new System.Drawing.Point(898, 589);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(152, 62);
-            this.btnLoad.TabIndex = 5;
-            this.btnLoad.Text = "Load";
+            this.btnLoad.TabIndex = 31;
+            this.btnLoad.Text = "&Load";
+            this.toolTip1.SetToolTip(this.btnLoad, "Click Here to load the profile(alt+L)");
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // lbUniquelName
             // 
             this.lbUniquelName.AutoSize = true;
+            this.lbUniquelName.BackColor = System.Drawing.Color.Transparent;
             this.lbUniquelName.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUniquelName.Location = new System.Drawing.Point(61, 43);
             this.lbUniquelName.Name = "lbUniquelName";
@@ -646,21 +677,36 @@
             this.lbUniquelName.TabIndex = 6;
             this.lbUniquelName.Text = "Name";
             // 
-            // lblNameValue
+            // txtnameValue
             // 
-            this.lblNameValue.AutoSize = true;
-            this.lblNameValue.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameValue.Location = new System.Drawing.Point(170, 43);
-            this.lblNameValue.Name = "lblNameValue";
-            this.lblNameValue.Size = new System.Drawing.Size(0, 38);
-            this.lblNameValue.TabIndex = 7;
+            this.txtnameValue.Location = new System.Drawing.Point(146, 49);
+            this.txtnameValue.Name = "txtnameValue";
+            this.txtnameValue.Size = new System.Drawing.Size(195, 26);
+            this.txtnameValue.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.txtnameValue, "Enter the name of the profile");
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::Assignment_4_Minecraft.Properties.Resources.OIP;
+            this.btnExit.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(512, 589);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(152, 62);
+            this.btnExit.TabIndex = 29;
+            this.btnExit.Text = "&Exit";
+            this.toolTip1.SetToolTip(this.btnExit, "Click Here to Exit(alt +E)");
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Assignment_4_Minecraft.Properties.Resources.OIP;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 663);
-            this.Controls.Add(this.lblNameValue);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.txtnameValue);
             this.Controls.Add(this.lbUniquelName);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnSave);
@@ -669,6 +715,7 @@
             this.Controls.Add(this.lblSettingTitle);
             this.Controls.Add(this.tcSettings);
             this.Name = "frmSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsForm";
             this.Load += new System.EventHandler(this.frmSettings_Load);
             this.tcMovement.ResumeLayout(false);
@@ -742,6 +789,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Label lbUniquelName;
-        private System.Windows.Forms.Label lblNameValue;
+        private System.Windows.Forms.TextBox txtnameValue;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnExit;
     }
 }
