@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week 8 Demo A Exception Han
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week11", "Week11\Week11.csproj", "{FD743F7B-7041-4C66-AC9E-1FB9CE5B1D12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExercise2", "ClassExercise2\ClassExercise2.csproj", "{DA0A5C80-A86B-4ECF-A438-93D2958AFAD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExercise3", "ClassExercise2\ClassExercise3.csproj", "{DA0A5C80-A86B-4ECF-A438-93D2958AFAD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
