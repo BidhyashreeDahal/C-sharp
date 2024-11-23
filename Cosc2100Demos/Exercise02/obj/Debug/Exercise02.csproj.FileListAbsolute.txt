@@ -1,0 +1,4 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Exercise02\obj\Debug\Exercise02.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Exercise02\obj\Debug\Exercise02.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Exercise02\obj\Debug\Exercise02.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Exercise02\obj\Debug\Exercise02.csproj.CoreCompileInputs.cache

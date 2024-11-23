@@ -230,7 +230,11 @@ namespace Assignment_4_Minecraft
                 }
             }
         }
-
+        /// <summary>
+        /// Click event to cancel the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to quit?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)

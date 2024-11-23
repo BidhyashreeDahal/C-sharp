@@ -320,6 +320,7 @@
             // cboCameraProspective
             // 
             this.cboCameraProspective.AllowDrop = true;
+            this.cboCameraProspective.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCameraProspective.FormattingEnabled = true;
             this.cboCameraProspective.Items.AddRange(new object[] {
             "FirstPerson",
