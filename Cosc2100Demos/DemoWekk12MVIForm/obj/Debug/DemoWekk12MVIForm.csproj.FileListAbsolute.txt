@@ -1,0 +1,6 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\DemoWekk12MVIForm.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\DemoWekk12MVIForm.Form1.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\Week12Demo_DatabaseStufffinal.frmSubForm.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\DemoWekk12MVIForm.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\DemoWekk12MVIForm.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\DemoWekk12MVIForm\obj\Debug\DemoWekk12MVIForm.csproj.CoreCompileInputs.cache

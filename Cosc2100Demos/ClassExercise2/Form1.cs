@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ClassExercise2
 {
-    public partial class Form1 : Form
+    public partial class frmTeamsAndPlayers : Form
     {
-        public Form1()
+        public frmTeamsAndPlayers()
         {
             InitializeComponent();
         }

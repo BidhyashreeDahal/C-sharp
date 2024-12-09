@@ -60,5 +60,10 @@ namespace Assignment_4_Minecraft
             frmSet.Show();
             this.Close();
         }
+
+        private void frmSplash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ClassExercise2
 {
-    partial class Form1
+    partial class frmTeamsAndPlayers
     {
         /// <summary>
         /// Required designer variable.
@@ -109,7 +109,7 @@
             this.dgvPlayers.Name = "dgvPlayers";
             this.dgvPlayers.RowHeadersWidth = 62;
             this.dgvPlayers.RowTemplate.Height = 28;
-            this.dgvPlayers.Size = new System.Drawing.Size(857, 520);
+            this.dgvPlayers.Size = new System.Drawing.Size(926, 520);
             this.dgvPlayers.TabIndex = 9;
             this.dgvPlayers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -182,7 +182,7 @@
             this.lblTeams.TabIndex = 11;
             this.lblTeams.Text = "Available Teams";
             // 
-            // Form1
+            // frmTeamsAndPlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,8 +192,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.cboTeams);
             this.Controls.Add(this.dgvPlayers);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmTeamsAndPlayers";
+            this.Text = "View Players ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sportleaguesDataSetPlayers)).EndInit();

@@ -1,0 +1,11 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.Form1.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\bin\Debug\Week12Demo_DatabaseStufffinal.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\bin\Debug\Week12Demo_DatabaseStufffinal.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\bin\Debug\Week12Demo_DatabaseStufffinal.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\Week12Demo_DatabaseStufffinal\obj\Debug\Week12Demo_DatabaseStufffinal.frmContries.resources

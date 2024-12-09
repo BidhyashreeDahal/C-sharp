@@ -1,0 +1,10 @@
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\bin\Debug\ClassExercise2.exe.config
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\bin\Debug\ClassExercise2.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\bin\Debug\ClassExercise2.pdb
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise3.csproj.AssemblyReference.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise2.frmTeamsAndPlayers.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise2.Properties.Resources.resources
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise3.csproj.GenerateResource.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise3.csproj.CoreCompileInputs.cache
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise2.exe
+D:\courses\COSC2100\Repo\COSC2100\Cosc2100Demos\ClassExercise2\obj\Debug\ClassExercise2.pdb
