@@ -51,7 +51,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(2, 36);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(732, 40);
+            this.lblTitle.Size = new System.Drawing.Size(1046, 59);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "GameVerse: Your Ultimate Gaming Review Hub";
             // 
@@ -64,9 +64,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(297, 279);
+            this.label2.Location = new System.Drawing.Point(297, 321);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(478, 66);
+            this.label2.Size = new System.Drawing.Size(660, 102);
             this.label2.TabIndex = 7;
             this.label2.Text = "GameVerse is where gamers unite to share reviews,\r\n discover new adventures, and " +
     "shape the future of gaming. \r\nYour journey to the ultimate gaming experience beg" +
@@ -79,7 +79,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(315, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 21);
+            this.label1.Size = new System.Drawing.Size(533, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Unleashing the Power of Gamer Insights";
             // 
@@ -87,7 +87,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::Assignment5.Properties.Resources.pngtree_a_girl_gamer_png_image_13524786;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(854, 98);
+            this.pictureBox3.Location = new System.Drawing.Point(886, 98);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(254, 262);
             this.pictureBox3.TabIndex = 5;
@@ -102,7 +102,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(279, 305);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -119,7 +118,7 @@
             this.pbAngryBomb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pbAngryBomb.BackgroundImage = global::Assignment5.Properties.Resources.controller;
             this.pbAngryBomb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbAngryBomb.Location = new System.Drawing.Point(579, 363);
+            this.pbAngryBomb.Location = new System.Drawing.Point(940, 486);
             this.pbAngryBomb.Name = "pbAngryBomb";
             this.pbAngryBomb.Size = new System.Drawing.Size(196, 162);
             this.pbAngryBomb.TabIndex = 1;
@@ -128,11 +127,11 @@
             // frmSplashScreen
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(796, 537);
+            this.ClientSize = new System.Drawing.Size(1157, 660);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
@@ -148,7 +147,6 @@
             this.Name = "frmSplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
-            this.Load += new System.EventHandler(this.SplashScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

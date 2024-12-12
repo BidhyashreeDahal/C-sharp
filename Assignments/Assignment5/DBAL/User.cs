@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * Class that provides the properties and methods of the User
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,8 +19,12 @@ using Assignment5.Properties;
 
 namespace DBAL
 {
+    /// <summary>
+    /// Public class User
+    /// </summary>
     public class User
     {
+        // List of the Users
         public static List<User> users = new List<User>();
         public static string connectionString = Tools.GetConnectionString();
 
@@ -24,10 +36,19 @@ namespace DBAL
         public string Email { get; set; }
         public string Passkey { get; set; }
 
-        // Default Constructor
+        /// <summary>
+        /// Default Constructore
+        /// </summary>
         public User() { }
 
-        // Parameterized Constructor
+        /// <summary>
+        /// Parameterized constructor to initialize user properties.
+        /// </summary>
+        /// <param name="userID">User ID.</param>
+        /// <param name="firstName">First Name.</param>
+        /// <param name="lastName">Last Name.</param>
+        /// <param name="email">Email.</param>
+        /// <param name="passkey">Password Key.</param>
         public User(int userID, string firstName, string lastName, string email, string passkey)
         {
             UserID = userID;
@@ -36,6 +57,10 @@ namespace DBAL
             Email = email;
             Passkey = passkey;
         }
+        /// <summary>
+        /// Populates the user list by fetching data from the database.
+        /// </summary>
+        /// <exception cref="Exception"></exception>
 
         public static void PopulateUser()
         {
@@ -67,6 +92,11 @@ namespace DBAL
 
             }
         }
+        /// <summary>
+        /// Returns a single user by UserID.
+        /// </summary>
+        /// <param name="userID">User ID.</param>
+        /// <returns>User object or null if not found.</returns>
         public static User ReturnSingleUser(int userID)
         {
             try
@@ -100,6 +130,10 @@ namespace DBAL
             }
             catch (Exception ex) { throw new Exception(ex.Message); };    
         }
+        /// <summary>
+        /// Updates an existing user in the database.
+        /// </summary>
+        /// <returns>True if update was successful, otherwise false.</returns>
 
         public bool UpdateUser()
         {
@@ -130,6 +164,10 @@ namespace DBAL
                 throw new Exception(ex.Message);
             }
         }
+        /// <summary>
+        /// Updates an existing user in the database.
+        /// </summary>
+        /// <returns>True if update was successful, otherwise false.</returns>
         public static bool insertUser(User user)
         {
             bool isSuccessful = false;
@@ -157,6 +195,11 @@ namespace DBAL
             }
              
         }
+        /// <summary>
+        /// Deletes a user from the database by UserID.
+        /// </summary>
+        /// <param name="UserID">User ID to be deleted.</param>
+        /// <returns>True if deletion was successful, otherwise false.</returns>
 
         public static bool deleteUser(int UserID) { 
             bool isSuccessful = false;
@@ -179,6 +222,12 @@ namespace DBAL
                 throw new Exception (ex.Message);
             }
         }
+        /// <summary>
+        /// Retrieves a user by email and password key.
+        /// </summary>
+        /// <param name="Email">User email.</param>
+        /// <param name="PassKey">Password key.</param>
+        /// <returns>User object if found, otherwise null.</returns>
         public static User GetUser(string Email,string PassKey)
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -206,6 +255,10 @@ namespace DBAL
                 return null;
             }
         }
+        /// <summary>
+        /// Converts the User object to a string.
+        /// </summary>
+        /// <returns>A string representation of the user.</returns>
 
         public override string ToString()
         {

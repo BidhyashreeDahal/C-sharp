@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTipRegister = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +94,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(265, 47);
             this.txtFirstName.TabIndex = 4;
+            this.toolTipRegister.SetToolTip(this.txtFirstName, "Enter Your First  Name");
             // 
             // txtLastName
             // 
@@ -100,6 +103,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(265, 47);
             this.txtLastName.TabIndex = 5;
+            this.toolTipRegister.SetToolTip(this.txtLastName, "Enter Your lastName");
             // 
             // txtEmail
             // 
@@ -108,6 +112,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(265, 47);
             this.txtEmail.TabIndex = 6;
+            this.toolTipRegister.SetToolTip(this.txtEmail, "Enter Your Email");
             // 
             // txtPassword
             // 
@@ -116,15 +121,18 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(265, 47);
             this.txtPassword.TabIndex = 7;
+            this.toolTipRegister.SetToolTip(this.txtPassword, "Enetr Your Password");
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(880, 556);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(172, 60);
             this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "&Cancel";
+            this.toolTipRegister.SetToolTip(this.btnCancel, "Click Here To Cancel(alt +C)");
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -135,7 +143,8 @@
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(158, 60);
             this.btnRegistration.TabIndex = 9;
-            this.btnRegistration.Text = "Regrister";
+            this.btnRegistration.Text = "&Regrister";
+            this.toolTipRegister.SetToolTip(this.btnRegistration, "Click Here To Register(alt +R)");
             this.btnRegistration.UseVisualStyleBackColor = true;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
@@ -156,6 +165,7 @@
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(265, 47);
             this.txtConfirmPassword.TabIndex = 11;
+            this.toolTipRegister.SetToolTip(this.txtConfirmPassword, "Confirm Password");
             // 
             // lblTitle
             // 
@@ -179,9 +189,11 @@
             // 
             // frmRegistration
             // 
+            this.AcceptButton = this.btnRegistration;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1128, 653);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
@@ -221,5 +233,6 @@
         private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolTip toolTipRegister;
     }
 }

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * The form is the first form that open when running the program
+ */
+ 
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +21,10 @@ namespace Assignment5.Forms
     public partial class frmSplashScreen : Form
     {
         private frmLogin frmLog;
+        /// <summary>
+        /// Initializes the splash screen and sets up the timer.
+        /// </summary>
+        /// <param name="frm">Reference to the login form.</param>
         public frmSplashScreen(frmLogin frm)
         {
             InitializeComponent();
@@ -21,12 +33,9 @@ namespace Assignment5.Forms
             tmrSplash.Tick += tmrSplash_Tick;
             tmrSplash.Start();
         }
-
-        private void SplashScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Handles the timer tick event, transitioning from the splash screen to the login form.
+        /// </summary>
         private void tmrSplash_Tick(object sender, EventArgs e)
         {
             tmrSplash.Stop();
@@ -34,9 +43,6 @@ namespace Assignment5.Forms
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * Form for user registration.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +20,17 @@ namespace Assignment5
     public partial class frmRegistration : Form
     {
         private frmLogin frmIn;
+        /// <summary>
+        /// Initializes a new instance of the frmRegistration class.
+        /// </summary>
         public frmRegistration()
         {
             InitializeComponent();
-            
         }
+        /// <summary>
+        /// Handles the click event of the registration button.
+        /// Validates user input, creates a new User object, and inserts it into the database.
+        /// </summary>
         private void btnRegistration_Click(object sender, EventArgs e)
         {
             try
@@ -81,9 +93,7 @@ namespace Assignment5
                     return;
                 }
                 try
-                    {
-                    
-
+                    {                    
                     User u = new User()
                       {
                        
@@ -96,21 +106,17 @@ namespace Assignment5
                     try
                     {
                         User.insertUser(u);
-                        MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
+                        MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     }
                     catch(Exception ex)
                     {
                        
                         MessageBox.Show(ex.Message);
-                    }
-                        
+                    }       
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"An error occurred while registering the user: {ex.Message}", "Registration Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                       
+                        MessageBox.Show($"An error occurred while registering the user: {ex.Message}", "Registration Error", MessageBoxButtons.OK, MessageBoxIcon.Error);        
                     }
                 }
                 catch (Exception ex)
@@ -118,8 +124,9 @@ namespace Assignment5
                 MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    
-            
+        /// <summary>
+        /// Handles the click event of the cancel button.
+        /// Closes the registration form.
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();

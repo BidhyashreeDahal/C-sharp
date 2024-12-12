@@ -1,18 +1,31 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * Class that provides the properties and methods of the reviews 
+ */
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using Assignment5;
 
 namespace DBAL
 {
+    /// <summary>
+    /// Internal Class Reviews
+    /// </summary>
     internal class Reviews
     {
+        // List of reviews
         public static List<Reviews> reviews = new List<Reviews>();
         public static string connectionString = Tools.GetConnectionString();
+        // Properties of Reviews 
         public int ReviewID {  get; set; }
         public int GameID {  get; set; }
         
@@ -22,15 +35,29 @@ namespace DBAL
         public DateTime ReviewDate { get; set; }
 
         public Reviews() { }
+        /// <summary>
+        /// Parameterized Constructor
+        /// </summary>
+        /// <param name="reviewID"></param>
+        /// <param name="gameID"></param>
+        /// <param name="reviewerID"></param>
+        /// <param name="rating"></param>
+        /// <param name="reviewText"></param>
+        /// <param name="reviewDate"></param>
         public Reviews(int reviewID, int gameID, int reviewerID, int rating, string reviewText,DateTime reviewDate)
         {
             ReviewID = reviewID;
             GameID = gameID;
-            ReviewID = reviewerID;
+            ReviewerID = reviewerID;
             Rating = rating;
             ReviewText = reviewText;
             ReviewDate = reviewDate;
         }
+        /// <summary>
+        /// Fills the list of reviews for a given game ID.
+        /// </summary>
+        /// <param name="gameID">The GameID for which reviews are to be fetched.</param>
+        /// <returns>A list of reviews.</returns>
         public static List<Reviews> FillReviews(int gameID)
         {
             List<Reviews> reviews = new List<Reviews>();
@@ -69,7 +96,11 @@ namespace DBAL
 
             return reviews;
         }
-
+        /// <summary>
+        /// Retrieves a review by its ID.
+        /// </summary>
+        /// <param name="reviewID">The ID of the review to retrieve.</param>
+        /// <returns>A review object if found, otherwise null.</returns>
         public static Reviews GetReviewByID(int reviewID)
         {
             try
@@ -101,7 +132,12 @@ namespace DBAL
             }
             catch (Exception ex) { throw new Exception(ex.Message); };
         }
-        public bool UpdateReviews()
+        /// <summary>
+        /// Updates an existing review in the database.
+        /// </summary>
+        /// <param name="review">The review object with updated values.</param>
+        /// <returns>True if the update is successful, otherwise false.</returns>
+        public static bool UpdateReviews(Reviews review)
         {
             bool isSuccessful = false;
             try
@@ -110,12 +146,12 @@ namespace DBAL
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand("spUpdateReview", connection);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ReviewID", ReviewID);
-                cmd.Parameters.AddWithValue("@GameID",GameID);
-                cmd.Parameters.AddWithValue("@ReviewerID",ReviewerID);
-                cmd.Parameters.AddWithValue("@Rating",Rating);
-                cmd.Parameters.AddWithValue("ReviewText", ReviewText);
-                cmd.Parameters.AddWithValue("ReviewDate", ReviewDate);
+                cmd.Parameters.AddWithValue("@ReviewID", review.ReviewID);
+                cmd.Parameters.AddWithValue("@GameID",review.GameID);
+                cmd.Parameters.AddWithValue("@ReviewerID",review.ReviewerID);
+                cmd.Parameters.AddWithValue("@Rating",review.Rating);
+                cmd.Parameters.AddWithValue("ReviewText", review.ReviewText);
+                cmd.Parameters.AddWithValue("ReviewDate", review.ReviewDate);
                 connection.Open();
                 if (cmd.ExecuteNonQuery() == 1)
                 {
@@ -129,7 +165,12 @@ namespace DBAL
                 throw new Exception(ex.Message);
             }
         }
-        public static bool insertReviews(Reviews review)
+        /// <summary>
+        /// Inserts a new review into the database.
+        /// </summary>
+        /// <param name="review">The review object to be inserted.</param>
+        /// <returns>True if the insertion is successful, otherwise false.</returns>
+        public static bool InsertReview(Reviews review)
         {
             bool isSuccessful = false;
             try
@@ -137,18 +178,25 @@ namespace DBAL
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand("spInsertNewReview", connection);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                SqlParameter reviewIdParam = new SqlParameter("@ReviewID", SqlDbType.Int);
+                reviewIdParam.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(reviewIdParam);
+
                 cmd.Parameters.AddWithValue("@GameID", review.GameID);
                 cmd.Parameters.AddWithValue("@UserID", review.ReviewerID);
                 cmd.Parameters.AddWithValue("@Rating", review.Rating);
                 cmd.Parameters.AddWithValue("@ReviewText", review.ReviewText);
                 cmd.Parameters.AddWithValue("@ReviewDate", review.ReviewDate.Date);
-               
+
                 connection.Open();
-                if (cmd.ExecuteNonQuery() == 1)
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
                 {
+                    review.ReviewID = (int)cmd.Parameters["@ReviewID"].Value;
                     isSuccessful = true;
                 }
-                connection.Close();
             }
             catch (Exception ex)
             {
@@ -156,8 +204,11 @@ namespace DBAL
             }
             return isSuccessful;
         }
-
-
+        /// <summary>
+        /// Deletes a review from the database based on its ID.
+        /// </summary>
+        /// <param name="reviewID">The ID of the review to be deleted.</param>
+        /// <returns>True if deletion is successful, otherwise false.</returns>
         public static bool deleteReviews(int ReviewID)
         {
             bool isSuccessful = false;
@@ -166,7 +217,9 @@ namespace DBAL
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand("spDeleteReview", connection);
-                cmd.Parameters.AddWithValue("@ReviewID", ReviewID);
+                cmd.Parameters.Add(new SqlParameter("@ReviewID", SqlDbType.Int) { Value = ReviewID });
+                cmd.CommandType = CommandType.StoredProcedure;  
+                
                 connection.Open();
                 if (cmd.ExecuteNonQuery() == 1)
                 {

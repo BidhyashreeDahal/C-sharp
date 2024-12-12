@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.radShowPassword = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +63,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(313, 40);
             this.txtEmail.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.txtEmail, "Enter Your Email");
             // 
             // lblPassword
             // 
@@ -78,10 +81,11 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Cooper Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPassword.Location = new System.Drawing.Point(670, 200);
+            this.txtPassword.Location = new System.Drawing.Point(670, 224);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(313, 40);
             this.txtPassword.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txtPassword, "Enter Your Password");
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnLogin
@@ -89,11 +93,12 @@
             this.btnLogin.BackColor = System.Drawing.Color.OliveDrab;
             this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(460, 522);
+            this.btnLogin.Location = new System.Drawing.Point(645, 571);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(134, 57);
             this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "&Login";
+            this.toolTip1.SetToolTip(this.btnLogin, "Clik Here to Logit(alt+L)");
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -102,25 +107,29 @@
             this.btnRegister.BackColor = System.Drawing.Color.Orange;
             this.btnRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Black;
-            this.btnRegister.Location = new System.Drawing.Point(670, 522);
+            this.btnRegister.Location = new System.Drawing.Point(823, 571);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(160, 57);
             this.btnRegister.TabIndex = 7;
-            this.btnRegister.Text = "Register";
+            this.btnRegister.Text = "&Register";
+            this.toolTip1.SetToolTip(this.btnRegister, "Click Here To Register");
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(892, 522);
+            this.btnExit.Location = new System.Drawing.Point(1009, 571);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 57);
             this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "&Exit";
+            this.toolTip1.SetToolTip(this.btnExit, "Click Here To Exit(alt +E)");
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // radShowPassword
             // 
@@ -132,7 +141,8 @@
             this.radShowPassword.Size = new System.Drawing.Size(231, 31);
             this.radShowPassword.TabIndex = 9;
             this.radShowPassword.TabStop = true;
-            this.radShowPassword.Text = "Show Password";
+            this.radShowPassword.Text = "&Show Password";
+            this.toolTip1.SetToolTip(this.radShowPassword, "Click here to show the password(alt+S)");
             this.radShowPassword.UseVisualStyleBackColor = true;
             this.radShowPassword.CheckedChanged += new System.EventHandler(this.radShowPassword_CheckedChanged_1);
             // 
@@ -159,11 +169,13 @@
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1108, 638);
+            this.CancelButton = this.btnExit;
+            this.ClientSize = new System.Drawing.Size(1182, 657);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radShowPassword);
             this.Controls.Add(this.btnExit);
@@ -174,8 +186,11 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.ForeColor = System.Drawing.Color.Peru;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -196,5 +211,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.RadioButton radShowPassword;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

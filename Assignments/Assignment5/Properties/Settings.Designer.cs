@@ -33,5 +33,16 @@ namespace Assignment5.Properties {
                 return ((string)(this["Setting"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int CurrentUserID {
+            get {
+                return ((int)(this["CurrentUserID"]));
+            }
+            set {
+                this["CurrentUserID"] = value;
+            }
+        }
     }
 }

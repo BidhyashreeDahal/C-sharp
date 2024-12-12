@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * Class that provides the properties and methods of the Game
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,16 +16,30 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DBAL
 {
+    /// <summary>
+    /// Internal Class Games
+    /// </summary>
     internal class Games
     {
+
         public static string connectionString = Tools.GetConnectionString();
         public static List<Games> Game = new List<Games> ();
+        // // Properties of the Game class
         public int GameID {  get; set; }
         public string Title {  get; set; }
         public string Genre {  get; set; }
         public DateTime ReleaseDate { get; set; }
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Games() { }
-
+        /// <summary>
+        /// Parameterized Constructor
+        /// </summary>
+        /// <param name="gameID"></param>
+        /// <param name="title"></param>
+        /// <param name="genre"></param>
+        /// <param name="releaseDate"></param>
        public Games(int gameID, string title, string genre, DateTime releaseDate)
        {
             GameID = gameID;
@@ -26,7 +47,11 @@ namespace DBAL
             Genre = genre;
             ReleaseDate = releaseDate;
        }
-       public static List<Games>  FillGames()
+        /// <summary>
+        /// Fills the list of games by retrieving all records from the Games table.
+        /// </summary>
+        /// <returns>A list of games.</returns>
+        public static List<Games>  FillGames()
        {
            
             try
@@ -56,6 +81,11 @@ namespace DBAL
             return Game;
 
        }
+        // <summary>
+        /// Retrieves a game by its ID.
+        /// </summary>
+        /// <param name="gameID">The ID of the game to retrieve.</param>
+        /// <returns>A game object if found, otherwise null.</returns>
         public static Games GetGameByID(int gameID)
         {
             try
@@ -85,6 +115,10 @@ namespace DBAL
                 }
             }catch (Exception ex) { throw new Exception(ex.Message); };
         }
+        /// <summary>
+        /// Updates the details of a game.
+        /// </summary>
+        /// <returns>True if the update was successful, otherwise false.</returns>
         public bool UpdateGames()
         {
             bool isSuccessful = false;
@@ -111,6 +145,10 @@ namespace DBAL
                 throw new Exception(ex.Message);
             }
         }
+        /// <summary>
+        /// Inserts a new game into the database.
+        /// </summary>
+        /// <returns>True if the insertion was successful, otherwise false.</returns>
         public bool insertGames()
         {
             bool isSuccessful = false;
@@ -137,7 +175,11 @@ namespace DBAL
             }
 
         }
-
+        /// <summary>
+        /// Deletes a game from the database by its ID.
+        /// </summary>
+        /// <param name="gameID">The ID of the game to delete.</param>
+        /// <returns>True if the deletion was successful, otherwise false.</returns>
         public static bool deleteGames(int GameID)
         {
             bool isSuccessful = false;

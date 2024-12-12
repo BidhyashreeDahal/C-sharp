@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-6
+ * Class that provides the properties and methods of the Tools
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,15 +19,28 @@ namespace DBAL
 {
     internal class Tools
     {
+        // <summary>
+        /// Retrieves the connection string from the configuration.
+        /// </summary>
+        /// <returns>Connection string for the database.</returns>
         public static string GetConnectionString()
         {
             return ConfigurationManager.ConnectionStrings["VideoGameReviewDB"].ConnectionString;
         }
+        // <summary>
+        /// Validates the passkey to ensure it is a 4-digit numeric value.
+        /// </summary>
+        /// <param name="passkey">The passkey to be validated.</param>
+        /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidPasskey(string passkey)
         {
             return int.TryParse(passkey, out int numericPassKey) && passkey.Length == 4 && (numericPassKey >= 1000 && numericPassKey <= 9999);
         }
-
+        /// <summary>
+        /// Validates the first name to ensure it contains only letters and is up to 50 characters long.
+        /// </summary>
+        /// <param name="firstName">The first name to be validated.</param>
+        /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidFirstName(string firstName)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(firstName, @"^[A-Za-z]+$") && firstName.Length <= 50)
@@ -31,6 +52,11 @@ namespace DBAL
                 return false;
             }
         }
+        /// <summary>
+        /// Validates the last name to ensure it contains only letters and is up to 50 characters long.
+        /// </summary>
+        /// <param name="lastName">The last name to be validated.</param>
+        /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidLastName(string lastName)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(lastName, @"^[A-Za-z]+$") && lastName.Length <= 50)
@@ -43,6 +69,11 @@ namespace DBAL
             }
 
         }
+        /// <summary>
+        /// Validates the email format.
+        /// </summary>
+        /// <param name="email">The email to be validated.</param>
+        /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidEmail(string email)
         {
             try
@@ -55,6 +86,11 @@ namespace DBAL
                 return false;
             }
         }
+        /// <summary>
+        /// Checks if the provided email already exists in the database.
+        /// </summary>
+        /// <param name="email">The email to be checked.</param>
+        /// <returns>True if the email exists, otherwise false.</returns>
 
         public static bool EmailExists(string email)
         {
@@ -75,6 +111,10 @@ namespace DBAL
                 throw new Exception(ex.Message);
             }
         }
+        /// <summary>
+        /// Retrieves the maximum UserID from the Users table.
+        /// </summary>
+        /// <returns>The maximum UserID from the database.</returns>
         public static int GetMaxUserIDFromDatabase()
         {
             int maxUserID = 0; // Default value in case no users exist in the database
@@ -82,16 +122,11 @@ namespace DBAL
             {
                 using (SqlConnection connection = new SqlConnection(GetConnectionString()))
                 {
-                    // Query to get the maximum UserID from the database
                     string query = "SELECT MAX(UserID) FROM Users";
 
                     SqlCommand cmd = new SqlCommand(query, connection);
                     connection.Open();
-
-                    // Execute the query and retrieve the result
                     object result = cmd.ExecuteScalar();
-
-                    // If there are users in the database, result will be a valid integer
                     if (result != DBNull.Value)
                     {
                         maxUserID = Convert.ToInt32(result);
@@ -107,39 +142,12 @@ namespace DBAL
 
             return maxUserID;
         }
-
-        public static int GetMaxReviewIDFromDatabase()
-        {
-            int maxReviewID = 0; // Default value in case no users exist in the database
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(GetConnectionString()))
-                {
-                    // Query to get the maximum UserID from the database
-                    string query = "SELECT MAX(ReviewID) FROM Reviews";
-
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    connection.Open();
-
-                    // Execute the query and retrieve the result
-                    object result = cmd.ExecuteScalar();
-
-                    // If there are users in the database, result will be a valid integer
-                    if (result != DBNull.Value)
-                    {
-                        maxReviewID = Convert.ToInt32(result);
-                    }
-
-                    connection.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error retrieving max UserID: " + ex.Message);
-            }
-
-            return maxReviewID;
-        }
+        // <summary>
+        /// Checks if a review already exists for a specific game and user.
+        /// </summary>
+        /// <param name="gameId">The GameID to check.</param>
+        /// <param name="userId">The UserID to check.</param>
+        /// <returns>True if the review exists, otherwise false.</returns>
 
         public static bool CheckIfReviewExists(int gameId, int userId)
         {
