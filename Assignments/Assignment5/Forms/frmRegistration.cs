@@ -106,7 +106,7 @@ namespace Assignment5
                     try
                     {
                         User.insertUser(u);
-                        MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch(Exception ex)
                     {

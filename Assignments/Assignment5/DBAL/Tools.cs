@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using Assignment5;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace DBAL
 {
@@ -43,6 +44,7 @@ namespace DBAL
         /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidFirstName(string firstName)
         {
+            // INTERNET
             if (System.Text.RegularExpressions.Regex.IsMatch(firstName, @"^[A-Za-z]+$") && firstName.Length <= 50)
             {
                 return true;
@@ -59,6 +61,7 @@ namespace DBAL
         /// <returns>True if valid, otherwise false.</returns>
         public static bool IsValidLastName(string lastName)
         {
+            // INTERNET
             if (System.Text.RegularExpressions.Regex.IsMatch(lastName, @"^[A-Za-z]+$") && lastName.Length <= 50)
             {
                 return true;
@@ -161,6 +164,11 @@ namespace DBAL
                 connection.Close();
                 return reviewCount > 0; // If count is greater than 0, it means the user has already reviewed the game.
             }
+        }
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            string pattern = @"^\+?[1-9]\d{1,14}$"; 
+            return Regex.IsMatch(phoneNumber, pattern);
         }
     }
 

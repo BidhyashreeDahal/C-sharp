@@ -63,7 +63,7 @@
             this.toolStripMenuItem1});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1569, 33);
+            this.menuStripMain.Size = new System.Drawing.Size(1569, 36);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStrip1";
             // 
@@ -240,6 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SlateBlue;
             this.ClientSize = new System.Drawing.Size(1569, 742);
             this.Controls.Add(this.lblGames);
             this.Controls.Add(this.lblWriteReview);

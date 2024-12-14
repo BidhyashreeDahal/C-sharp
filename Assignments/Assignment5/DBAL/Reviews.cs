@@ -64,10 +64,10 @@ namespace DBAL
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    using (SqlCommand cmd = new SqlCommand("SELECT ReviewID, GameID, ReviewerID, Rating, ReviewText, ReviewDate FROM Reviews WHERE GameID = @gameID", connection))
-                    {
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                SqlCommand cmd = new SqlCommand("SELECT ReviewID, GameID, ReviewerID, Rating, ReviewText, ReviewDate FROM Reviews WHERE GameID = @gameID", connection);
+                    
                         cmd.Parameters.AddWithValue("@gameID", gameID);
                         connection.Open();
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -86,8 +86,8 @@ namespace DBAL
                                 reviews.Add(r);
                             }
                         }
-                    }
-                }
+                    
+                
             }
             catch (Exception ex)
             {

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 4 Minecraft", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment5GameReview", "Assignment5\Assignment5GameReview.csproj", "{93A551B0-5268-4032-9901-60740189D3CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final Project", "Final Project\Final Project.csproj", "{DD765F31-376B-4F96-A8C5-2002C50557B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{93A551B0-5268-4032-9901-60740189D3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93A551B0-5268-4032-9901-60740189D3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93A551B0-5268-4032-9901-60740189D3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD765F31-376B-4F96-A8C5-2002C50557B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD765F31-376B-4F96-A8C5-2002C50557B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD765F31-376B-4F96-A8C5-2002C50557B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD765F31-376B-4F96-A8C5-2002C50557B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
