@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.dgvContacts = new System.Windows.Forms.DataGridView();
             this.lblContacts = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnTheme = new System.Windows.Forms.Button();
+            this.toolTipMainForm = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacts)).BeginInit();
             this.stsMainFrame.SuspendLayout();
             this.msMainForm.SuspendLayout();
@@ -63,7 +65,7 @@
             this.dgvContacts.RowTemplate.Height = 28;
             this.dgvContacts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvContacts.Size = new System.Drawing.Size(1126, 407);
-            this.dgvContacts.TabIndex = 0;
+            this.dgvContacts.TabIndex = 5;
             this.dgvContacts.SelectionChanged += new System.EventHandler(this.dgvContacts_SelectionChanged);
             // 
             // lblContacts
@@ -107,7 +109,7 @@
             this.searchToolStripMenuItem});
             this.msMainForm.Location = new System.Drawing.Point(0, 0);
             this.msMainForm.Name = "msMainForm";
-            this.msMainForm.Size = new System.Drawing.Size(1179, 36);
+            this.msMainForm.Size = new System.Drawing.Size(1179, 33);
             this.msMainForm.TabIndex = 3;
             this.msMainForm.Text = "menuStrip1";
             // 
@@ -119,26 +121,27 @@
             this.deleteContactToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Text = "&Menu";
+            this.menuToolStripMenuItem.ToolTipText = "Click Here to check the menu(alt+M)";
             // 
             // addContactToolStripMenuItem
             // 
             this.addContactToolStripMenuItem.Name = "addContactToolStripMenuItem";
-            this.addContactToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.addContactToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.addContactToolStripMenuItem.Text = "Add Contact";
             this.addContactToolStripMenuItem.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // editContactToolStripMenuItem
             // 
             this.editContactToolStripMenuItem.Name = "editContactToolStripMenuItem";
-            this.editContactToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.editContactToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.editContactToolStripMenuItem.Text = "Edit Contact";
             this.editContactToolStripMenuItem.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // deleteContactToolStripMenuItem
             // 
             this.deleteContactToolStripMenuItem.Name = "deleteContactToolStripMenuItem";
-            this.deleteContactToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.deleteContactToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.deleteContactToolStripMenuItem.Text = "Delete Contact";
             this.deleteContactToolStripMenuItem.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -156,8 +159,9 @@
             this.btnAdd.Location = new System.Drawing.Point(498, 567);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(132, 65);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "&Add";
+            this.toolTipMainForm.SetToolTip(this.btnAdd, "Click Here to Add New Contact(alt+A)");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -169,8 +173,9 @@
             this.btnEdit.Location = new System.Drawing.Point(654, 570);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(124, 58);
-            this.btnEdit.TabIndex = 5;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "&Edit";
+            this.toolTipMainForm.SetToolTip(this.btnEdit, "Click Here to Edd the Contact(alt+E)");
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -178,12 +183,14 @@
             // 
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDelete.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(822, 574);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(124, 58);
-            this.btnDelete.TabIndex = 6;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "&Delete";
+            this.toolTipMainForm.SetToolTip(this.btnDelete, "Click Here To Delete the Contact(alt+D)");
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -196,16 +203,19 @@
             this.btnTheme.Location = new System.Drawing.Point(1049, 52);
             this.btnTheme.Name = "btnTheme";
             this.btnTheme.Size = new System.Drawing.Size(108, 49);
-            this.btnTheme.TabIndex = 7;
-            this.btnTheme.Text = "Dark Mode";
+            this.btnTheme.TabIndex = 0;
+            this.btnTheme.Text = "Dar&k Mode";
+            this.toolTipMainForm.SetToolTip(this.btnTheme, "Click Here To Change the Screen into Dark Mode. (alt+K))");
             this.btnTheme.UseVisualStyleBackColor = false;
             this.btnTheme.Click += new System.EventHandler(this.btnTheme_Click);
             // 
             // frmMain
             // 
+            this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
+            this.CancelButton = this.btnDelete;
             this.ClientSize = new System.Drawing.Size(1179, 738);
             this.Controls.Add(this.btnTheme);
             this.Controls.Add(this.btnDelete);
@@ -247,5 +257,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStatusStriplabelStatus;
         private System.Windows.Forms.Button btnTheme;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolTip toolTipMainForm;
     }
 }

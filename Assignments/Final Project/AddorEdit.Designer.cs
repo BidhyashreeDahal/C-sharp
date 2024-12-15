@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblFullname = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.toolTipAddorEdit = new System.Windows.Forms.ToolTip(this.components);
             this.pnlEditOrSave.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,7 +108,8 @@
             this.txtPhoneNumber.Location = new System.Drawing.Point(237, 127);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(260, 41);
-            this.txtPhoneNumber.TabIndex = 12;
+            this.txtPhoneNumber.TabIndex = 1;
+            this.toolTipAddorEdit.SetToolTip(this.txtPhoneNumber, "Phone Number Of The Contact.");
             // 
             // txtEmail
             // 
@@ -114,7 +117,8 @@
             this.txtEmail.Location = new System.Drawing.Point(237, 182);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(260, 41);
-            this.txtEmail.TabIndex = 11;
+            this.txtEmail.TabIndex = 2;
+            this.toolTipAddorEdit.SetToolTip(this.txtEmail, "Email of The Contact");
             // 
             // txtAddress
             // 
@@ -122,7 +126,8 @@
             this.txtAddress.Location = new System.Drawing.Point(237, 235);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(260, 41);
-            this.txtAddress.TabIndex = 8;
+            this.txtAddress.TabIndex = 3;
+            this.toolTipAddorEdit.SetToolTip(this.txtAddress, "Write The Address Of The Contact");
             // 
             // txtfirstName
             // 
@@ -130,7 +135,8 @@
             this.txtfirstName.Location = new System.Drawing.Point(237, 71);
             this.txtfirstName.Name = "txtfirstName";
             this.txtfirstName.Size = new System.Drawing.Size(260, 41);
-            this.txtfirstName.TabIndex = 7;
+            this.txtfirstName.TabIndex = 0;
+            this.toolTipAddorEdit.SetToolTip(this.txtfirstName, "Write the Full name of the Contact");
             // 
             // lblStatus
             // 
@@ -149,8 +155,9 @@
             this.btnReturn.Location = new System.Drawing.Point(393, 317);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(131, 54);
-            this.btnReturn.TabIndex = 14;
-            this.btnReturn.Text = "Return";
+            this.btnReturn.TabIndex = 5;
+            this.btnReturn.Text = "&Return";
+            this.toolTipAddorEdit.SetToolTip(this.btnReturn, "Click Here To Return(alt+R)");
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -161,8 +168,9 @@
             this.btnSave.Location = new System.Drawing.Point(240, 317);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(128, 54);
-            this.btnSave.TabIndex = 13;
-            this.btnSave.Text = "Save";
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "&Save";
+            this.toolTipAddorEdit.SetToolTip(this.btnSave, "Click Here to Save the Contact. (alt+S)");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -201,5 +209,6 @@
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.ToolTip toolTipAddorEdit;
     }
 }
