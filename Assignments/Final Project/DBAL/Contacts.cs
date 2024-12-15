@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal 
+ * 100952513
+ * 2024-12-10
+ * Instantiable class contact that contains the 
+ * properties of the contact Table and methods 
+ * like instet, update and delete contact.
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -14,10 +24,14 @@ using System.Net;
 using System.Data.Common;
 namespace Final_Project.DBAL
 {
+    /// <summary>
+    /// Public Class Contact
+    /// </summary>
     public class Contact
     {
-        public static List<Contact> contacts = new List<Contact>();
 
+        #region Properties
+        public static List<Contact> contacts = new List<Contact>();
         public int ContactID { get; set; }
         public int UserID { get; set; }
         public string FullName { get; set; }
@@ -26,10 +40,24 @@ namespace Final_Project.DBAL
         public string Address { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        #endregion
+        #region Constructors
 
-        // Constructor
+        /// <summary>
+        /// Default Constructor 
+        /// </summary>
         public Contact() { }
-
+        /// <summary>
+        /// Paramaterized Constructor of the contact class 
+        /// </summary>
+        /// <param name="contactID">The unique identifier of the contact.</param>
+        /// <param name="userID">User associated with it either 1 or 2. 1 is adimn and 2 is regular user</param>
+        /// <param name="fullName">The full name of the contact</param>
+        /// <param name="phoneNumber">The phone number of the contact</param>
+        /// <param name="email">The email address of the contact.</param>
+        /// <param name="address">The physical address of the contact.</param>
+        /// <param name="createdAt">The date and time when the contact was created.</param>
+        /// <param name="updatedAt">The date and time when the contact was last updated.</param>
         public Contact(int contactID, int userID, string fullName, string phoneNumber, string email, string address, DateTime createdAt, DateTime updatedAt)
         {
             ContactID = contactID;
@@ -41,75 +69,76 @@ namespace Final_Project.DBAL
             CreatedAt = createdAt;
             UpdatedAt = updatedAt;
         }
-        public static string GetConnectionString()
-        {
-            return ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
-        }
+        #endregion
+        #region Methods
 
-        // Method to map data from a SqlDataReader to Contact object
-        public static Contact FromDataRow(DataRow row)
-        {
-            return new Contact
-            {
-                ContactID = Convert.ToInt32(row["ContactID"]),
-                UserID = Convert.ToInt32(row["UserID"]),
-                FullName = row["FullName"].ToString(),
-                PhoneNumber = row["PhoneNumber"].ToString(),
-                Email = row["Email"].ToString(),
-                Address = row["Address"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["CreatedAt"]),
-                UpdatedAt = Convert.ToDateTime(row["UpdatedAt"])
-            };
-        }
+        /*
+         * Generated method: Retrieves all contacts from the database.
+         * Changed to return a List<Contact> and added exception handling.
+         */
 
-        // Edited To Make it more simplified
-        // Method had using statements every removed it because it is not necesary here
+        /// <summary>
+        /// Retrieves all contacts from the database.
+        /// </summary>
+        /// <returns>A list of Contact objects populated with data from the Contacts table in the database.</returns>
         public static List<Contact> GetAllContacts()
         {
             List<Contact> contacts = new List<Contact>();
-            string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand cmd;
-            connection.Open();
-            cmd = new SqlCommand("SELECT * FROM Contacts", connection);
-            cmd.CommandType = CommandType.Text;
-
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                Contact contact = new Contact();
-                contact.ContactID = (int)reader["ContactID"];
-                contact.FullName = (string)reader["FullName"];
-                contact.PhoneNumber = (string)reader["PhoneNumber"];
-                contact.Email = (string)reader["Email"];
-                contact.Address = (string)reader["Address"];
-                contact.UserID = (int)reader["UserID"];
-                contact.CreatedAt = (DateTime)reader["CreatedAt"];// Added Created At
-                contact.UpdatedAt = (DateTime)reader["UpdatedAt"]; // Added Updated At
-                contacts.Add(contact);
+                SqlConnection connection = new SqlConnection(Tools.GetConnectionString()); // Removed using statements
+                SqlCommand cmd;
+                connection.Open();
+                cmd = new SqlCommand("SELECT * FROM Contacts", connection);
+                cmd.CommandType = CommandType.Text;
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Contact contact = new Contact();
+                    contact.ContactID = (int)reader["ContactID"];
+                    contact.FullName = (string)reader["FullName"];
+                    contact.PhoneNumber = (string)reader["PhoneNumber"];
+                    contact.Email = (string)reader["Email"];
+                    contact.Address = (string)reader["Address"];
+                    contact.UserID = (int)reader["UserID"];
+                    contact.CreatedAt = (DateTime)reader["CreatedAt"];// Added Created At
+                    contact.UpdatedAt = (DateTime)reader["UpdatedAt"]; // Added Updated At
+                    contacts.Add(contact);
+                }
             }
+            catch (Exception ex) 
+            {
+                throw new Exception("An error occurred while retrieving contacts: " + ex.Message);
+            }
+
             return contacts;
         }
 
 
-        // Method to insert a new contacts
-        // Maade the method boolean so that it can return true or false
-        // Used try Catch
-        // Removed using statents
+          /*
+           * Generated method: Inserts a new contact into the Contacts table.
+           * Changed to boolean return, simplified, and added exception handling.
+           */
+        /// <summary>
+        /// Inserts a new contact into the Contacts table in the database.
+        /// </summary>
+        /// <param name="contact">A Contact object containing the details of the contact to be inserted.</param>
+        /// <returns><c>true</c> if the contact is successfully inserted into the database; 
+        /// otherwise, returns <c>false</c></returns>
+        /// <exception cref="Exception">Thrown when an error occurs while attempting to insert the contact.</exception>
         public static bool InsertContacts(Contact contact)
         {
             bool isSuccessful = false;
             try
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
+                SqlConnection connection = new SqlConnection(Tools.GetConnectionString());
+                // Removed using statemnts
                 string query = @"
                 INSERT INTO Contacts (UserID, FullName, PhoneNumber, Email, Address, CreatedAt, UpdatedAt)
                 VALUES (@UserID, @FullName, @PhoneNumber, @Email, @Address, GETDATE(), GETDATE());
                 SELECT SCOPE_IDENTITY();";
-                SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.CommandType = CommandType.Text;
-                
                 cmd.Parameters.AddWithValue("@UserID", 1);
                 cmd.Parameters.AddWithValue("@FullName", contact.FullName);
                 cmd.Parameters.AddWithValue("@PhoneNumber", contact.PhoneNumber);
@@ -128,22 +157,34 @@ namespace Final_Project.DBAL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("An error occurred while inserting the contact: " + ex.Message, ex); // Added 
             }
             return isSuccessful;
         }
 
 
-        // Method to update a contact
-        // Give me the update Contact Method that updates the contacts-------------Prompt
-        // Was using Using Statement
-        // Connection was given as the parameter  [[Changes the parameter to Contact contact]]
+
+
+        /*
+           * Generated method: Updates an existing contact in the database.
+           * Changed to return boolean, simplified removing using statements,added exception handling, 
+           * changed the parameter to revieve contacts
+           */
+
+        /// <summary>
+        /// Updates an existing contact in the database with the provided details.
+        /// </summary>
+        /// <param name="contact">A Contact object containing the updated details of the contact.</param>
+        /// <returns>Returns <c>true</c> if the contact is successfully updated; otherwise, <c>false</c>.
+        /// </returns>
+        /// <exception cref="Exception">Throw when any error occurs</exception>
+        /// 
         public static bool UpdateContact(Contact contact)
         {
             bool isSuccessful = false;
             try
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
+               SqlConnection connection = new SqlConnection(Tools.GetConnectionString());
                 string query = @"
                 UPDATE Contacts 
                 SET FullName = @FullName, 
@@ -152,7 +193,6 @@ namespace Final_Project.DBAL
                     Address = @Address, 
                     UpdatedAt = GETDATE()
                 WHERE ContactID = @ContactID";
-                SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand(query,connection);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@ContactID", contact.ContactID);
@@ -170,19 +210,29 @@ namespace Final_Project.DBAL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("An error occurred while updating the contact: " + ex.Message, ex);
             }
 
         }
-
-        // Method to delete a contact
+        /*
+         * Generated Method :: Simplified the method by removing the unnecessary using statements, made the method boolean
+         * Added exception Handling
+         */
+        /// <summary>
+        ///Deletes a contact from the database by its ContactID.
+        /// </summary>
+        /// <param name="contactID">The ID of the contact to be deleted.</param>
+        /// <returns>
+        /// Returns <c>true</c> if the contact is successfully deleted; otherwise, <c>false</c>.
+        /// </returns>
+        /// <exception cref="Exception">Thrown when any other error occurs.</exception>
         public static bool DeleteContact(int contactID)
         {
             bool isSuccessful = false;
             try
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
-                SqlConnection connection = new SqlConnection(connectionString);
+
+                SqlConnection connection = new SqlConnection(Tools.GetConnectionString());
                 string query = "DELETE FROM Contacts WHERE ContactID = @ContactID";
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@ContactID", contactID);
@@ -196,85 +246,28 @@ namespace Final_Project.DBAL
                 return isSuccessful;
             }
             catch(Exception ex) {
-                throw new Exception(ex.Message);
+                throw new Exception("An error occurred while deleting the contact: " + ex.Message);
             }
             
         }
-        public static List <Contact> FillContact(int contactID)
-        {
-            List<Contact> contacts = new List<Contact>();
-            
-            SqlConnection connection = null;
-            string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
-            try
-            {
-                // Create a new SqlConnection
-                connection = new SqlConnection(connectionString);
-
-                // Open the connection
-                connection.Open();
-
-                // Create the command
-                SqlCommand cmd = new SqlCommand("SELECT ContactID, FullName, PhoneNumber, Email, Address, UserID, CreatedAt, UpdatedAt " +
-                                                "FROM Contacts WHERE ContactID = @ContactID", connection);
-                // Add parameter to the command
-                cmd.Parameters.AddWithValue("@ContactID", contactID);
-
-                // Execute the reader
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                // Check if we have a record
-                if (reader.Read())
-                {
-                    Contact c = new Contact();
-
-
-                    c.FullName = reader["FullName"] != DBNull.Value ? reader["FullName"].ToString() : string.Empty;
-                    c.PhoneNumber = reader["PhoneNumber"] != DBNull.Value ? reader["PhoneNumber"].ToString() : string.Empty;
-                    c.Email = reader["Email"] != DBNull.Value ? reader["Email"].ToString() : string.Empty;
-                    c.Address = reader["Address"] != DBNull.Value ? reader["Address"].ToString() : string.Empty;
-                    c.UserID = reader["UserID"] != DBNull.Value ? (int)reader["UserID"] : 0;
-                    c.CreatedAt = reader["CreatedAt"] != DBNull.Value ? (DateTime)reader["CreatedAt"] : DateTime.MinValue;
-                    c.UpdatedAt = reader["UpdatedAt"] != DBNull.Value ? (DateTime)reader["UpdatedAt"] : DateTime.MinValue;
-                        contacts.Add(c);
-                    
-                }
-
-                // Close the reader
-                reader.Close();
-
-            }
-            catch (Exception ex)
-            {
-                // Handle exceptions
-                throw new Exception($"Error loading contact: {ex.Message}", ex);
-            }
-            finally
-            {
-                // Ensure the connection is closed
-                if (connection != null && connection.State == System.Data.ConnectionState.Open)
-                {
-                    connection.Close();
-                }
-            }
-
-            return contacts;
-        }
-
-
+        /// <summary>
+        /// Retrieves a contact from the database by its ContactID.
+        /// </summary>
+        /// <param name="contactID">The ID of the contact to retrieve.</param>
+        /// <returns>
+        /// A <see cref="Contact"/> object representing the contact if found; otherwise, throws an exception.
+        /// </returns>
+        /// <exception cref="Exception">Thrown when no contact is found or any other error occurs.</exception>
         public static Contact GetContactByID(int contactID)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
+                SqlConnection connection = new SqlConnection(Tools.GetConnectionString());
                 string query = "SELECT * FROM Contacts WHERE ContactID = @ContactID";
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@ContactID", contactID);
-
                 connection.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
-
                 if (reader.Read())
                 {
                     return new Contact
@@ -293,7 +286,13 @@ namespace Final_Project.DBAL
                     throw new Exception("Contact not found.");
                 }
             }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while retrieving the contact: " + ex.Message, ex);
+            }
         }
+        #endregion
     }
+
 
 }

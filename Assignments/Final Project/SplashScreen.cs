@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Bidhyashree Dahal
+ * 100952513
+ * 2024-12-10
+ * This is the mainform that appears when running the program "Splash Form"
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,18 +16,18 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
-    public partial class SplashScreen : Form
+    /// <summary>
+    /// Partial class frmsplash
+    /// </summary>
+    public partial class frmSplash : Form
     {
-        public SplashScreen()
-        {
-            InitializeComponent();
-        }
-        private MainForm mainForm;
+        
+        private frmMain mainForm;
         /// <summary>
         /// Initializes the splash screen and sets up the timer.
         /// </summary>
         /// <param name="frm">Reference to the login form.</param>
-        public SplashScreen(MainForm frm)
+        public frmSplash(frmMain frm)
         {
             InitializeComponent();
             mainForm = frm;
@@ -38,6 +44,5 @@ namespace Final_Project
             mainForm.Show();
             this.Hide(); 
         }
-
     }
 }

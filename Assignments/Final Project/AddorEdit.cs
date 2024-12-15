@@ -1,4 +1,10 @@
-﻿using Final_Project.Properties;
+﻿/*Bidhyashree Dahal
+ * 100952513
+ * 2024-12-14
+ * The form to add the new contact or edit the existing one
+ */
+
+using Final_Project.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,31 +21,56 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final_Project.DBAL
 {
+    /// <summary>
+    /// Represents a form for adding or editing contact information.
+    /// </summary>
     public partial class frmAddorEdit : Form
     {
-        private MainForm frm;
+        /// <summary>
+        /// Gets or sets the ID of the contact to edit. If null, a new contact is being added.
+        /// </summary>
         public int? ContactID { get; set; }
-        public MainForm MainFormRef { get; internal set; }
-
-        public frmAddorEdit(MainForm mainForm)
+        /// <summary>
+        /// Gets or sets the reference to the main form.
+        /// </summary>
+        public frmMain MainFormRef { get; internal set; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmAddorEdit"/> class.
+        /// </summary>
+        /// <param name="mainForm">The main form instance.</param>
+        public frmAddorEdit(frmMain mainForm)
         {
             InitializeComponent();
             MainFormRef = mainForm;
-
         }
-
+        /* Genertated Code 
+         * Prompt :: I want to update the label of the addoredit form while clicking buttons in mainform 
+         * Chat GPT suggested me to generate  
+         * get or set peoperty and use in in the mainform
+         */
+        /// <summary>
+        /// Gets or sets the status text displayed on the form.
+        /// </summary>
         public string StatusText
         {
             get => lblStatus.Text;
             set => lblStatus.Text = value;
         }
-
-
+        /// <summary>
+        /// Handles the form load event.
+        /// </summary>
+        /// <param name="sender">The event source.</param>
+        /// <param name="e">Event data.</param>
         private void AddorEdit_Load(object sender, EventArgs e)
         {
-           
+           MainFormRef.Hide();
         }
-
+        #region Click Events
+        /// <summary>
+        /// Handles the Save button click event to save or update contact details.
+        /// </summary>
+        /// <param name="sender">The event source.</param>
+        /// <param name="e">Event data.</param>
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
@@ -61,7 +92,6 @@ namespace Final_Project.DBAL
                     MessageBox.Show("Invalid Phone Number", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
                 if (string.IsNullOrEmpty(email) || !Tools.IsValidEmail(email))
                 {
                     MessageBox.Show("Invalid Email", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -96,14 +126,16 @@ namespace Final_Project.DBAL
                         MessageBox.Show("Email already exist", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    contact.CreatedAt = DateTime.Now;
+                    if (Tools.PhoneNumberExists(phoneNumber)) 
+                    {
+                        MessageBox.Show("Phone Number already exist", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     Contact.InsertContacts(contact);
-                    
                     MessageBox.Show("Contact added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                // Set the MainFormRef property before calling LoadContacts  
                 MainFormRef.LoadContacts(0);
+                MainFormRef.Show();
                 this.Close();
             }
 
@@ -111,19 +143,22 @@ namespace Final_Project.DBAL
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            }
-
-
-
-        private void pnlEditOrSave_Paint(object sender, PaintEventArgs e)
-        {
-
         }
-
+        /// <summary>
+        /// Handles the Return button click event to return to the main form.
+        /// </summary>
+        /// <param name="sender">The event source.</param>
+        /// <param name="e">Event data.</param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            MainFormRef.Show();
             this.Close();
         }
+        #endregion
+        /// <summary>
+        /// Loads contact details into the form for editing.
+        /// </summary>
+        /// <param name="contactID">The ID of the contact to load.</param>
         public void LoadContactDetails(int contactID)
         {
             try

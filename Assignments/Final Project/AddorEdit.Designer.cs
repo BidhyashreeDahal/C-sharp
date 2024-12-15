@@ -99,7 +99,6 @@
             this.pnlEditOrSave.Name = "pnlEditOrSave";
             this.pnlEditOrSave.Size = new System.Drawing.Size(523, 307);
             this.pnlEditOrSave.TabIndex = 5;
-            this.pnlEditOrSave.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEditOrSave_Paint);
             // 
             // txtPhoneNumber
             // 

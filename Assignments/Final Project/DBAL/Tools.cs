@@ -1,11 +1,9 @@
 ﻿/*
  * Bidhyashree Dahal
  * 100952513
- * 2024-12-6
- * Class that provides the properties and methods of the Tools
+ * 2024-12-10
+ * Static class that provide the necessary element for the program
  */
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,47 +11,52 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using Final_Project;
-
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
 namespace Final_Project.DBAL
 {
-   
-    internal class Tools
+    public static class Tools
     {
-        // <summary>
+        /// <summary>
         /// Retrieves the connection string from the configuration.
         /// </summary>
         /// <returns>Connection string for the database.</returns>
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
+            try
+            {
+                return ConfigurationManager.ConnectionStrings["ContactManager"].ConnectionString;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error retrieving the connection string.", ex);
+            }
         }
-        // <summary>
-        /// Validates the passkey to ensure it is a 4-digit numeric value.
+        /* Genreated Method ::: Added fulllength.Length <= 50
+         */
+        /// <summary>
+        /// Validates whether a given full name meets the required format and length constraints.
         /// </summary>
-        /// <param name="passkey">The passkey to be validated.</param>
-        /// <returns>True if valid, otherwise false.</returns>
-
-        /// Validates the first name to ensure it contains only letters and is up to 50 characters long.
-        /// </summary>
-        /// <param name="firstName">The first name to be validated.</param>
-        /// <returns>True if valid, otherwise false.</returns>
-        //------ Coundn't include space before 
+        /// <param name="fullName">The full name to validate. It should contain only alphabetic characters and spaces, with a maximum length of 50 characters.</param>
+        /// <returns>
+        /// <c>true</c> if the full name is valid (only contains letters and spaces, does not start or end with spaces, and is no longer than 50 characters); 
+        /// otherwise, <c>false</c>.
+        /// </returns>
         public static bool IsValidFullName(string fullName)
         {
-            if (Regex.IsMatch(fullName, @"^[A-Za-z]+([ ][A-Za-z]+)*$") && fullName.Length <= 50)
+            try
             {
-                return true;
+                return Regex.IsMatch(fullName, @"^[A-Za-z]+([ ][A-Za-z]+)*$") && fullName.Length <= 50;
             }
-            else
+            catch (Exception ex)
             {
-                return false;
+                throw new Exception("Error validating the full name.", ex);
             }
-        }
-
-
+        }      
+        /*
+         * Generated Method
+         */
         /// <summary>
         /// Validates the email format.
         /// </summary>
@@ -76,44 +79,75 @@ namespace Final_Project.DBAL
         /// </summary>
         /// <param name="email">The email to be checked.</param>
         /// <returns>True if the email exists, otherwise false.</returns>
-
         public static bool EmailExists(string email)
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(GetConnectionString()))
-                {
+                    SqlConnection connection = new SqlConnection(GetConnectionString());     
                     string query = "SELECT COUNT(*) FROM Contacts WHERE Email = @Email";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@Email", email);
                     connection.Open();
                     int count = (int)cmd.ExecuteScalar();
-                    return count > 0; // Return true if email exists, false otherwise
-                }
+                    return count > 0; 
+                
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-        
-        // <summary>
-        /// Checks if a review already exists for a specific game and user.
+        /*
+         * Generated Method 
+         */
+        /// <summary>
+        /// Checks if the phonenumber is valid or not
         /// </summary>
-        /// <param name="gameId">The GameID to check.</param>
-        /// <param name="userId">The UserID to check.</param>
-        /// <returns>True if the review exists, otherwise false.</returns>
-
-        
+        /// <param name="phoneNumber">Takes the Phone number of the </param>
+        /// <returns>/// <c>true</c> if the phone number is valid according to the international phone number format; 
+        /// otherwise, <c>false</c>.</returns>
         public static bool IsValidPhoneNumber(string phoneNumber)
         {
-            // Regular expression to match valid phone numbers
-            string pattern = @"^\+?[1-9]\d{1,14}$"; // E.164 international format (e.g., +123456789)
-                                                    // OR
-                                                    // string pattern = @"^\d{10}$"; // Simple 10-digit format (e.g., 1234567890)
+            try
+            {
+                string pattern = @"^\+?[1-9]\d{1,14}$";
+                return Regex.IsMatch(phoneNumber, pattern);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error validating the phone number.", ex);
+            }
+        }
+        /*
+         * Prompt ::: Generate the method that check's if the phone number exist or not
+         * Generated Method :: Removed unnecessary using statements and simplified the method
+         */
 
-            return Regex.IsMatch(phoneNumber, pattern);
+        /// <summary>
+        /// Checks if the provided phone number already exists in the database.
+        /// </summary>
+        /// <param name="phoneNumber">The phone number to check.</param>
+        /// <returns>True if the phone number exists, otherwise false.</returns>
+        public static bool PhoneNumberExists(string phoneNumber)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(GetConnectionString());
+                string query = "SELECT COUNT(*) FROM Contacts WHERE PhoneNumber = @PhoneNumber";
+                SqlCommand cmd = new SqlCommand(query, connection);       
+                cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                connection.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;      
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An unexpected error occurred while checking phone number existence.", ex);
+            }
         }
     }
-
 }
+    
+
+

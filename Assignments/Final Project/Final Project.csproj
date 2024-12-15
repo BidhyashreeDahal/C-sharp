@@ -54,8 +54,6 @@
       <DependentUpon>AddorEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAL\Contacts.cs" />
-    <Compile Include="DBAL\Class2.cs" />
-    <Compile Include="DBAL\Class3.cs" />
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Octopus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

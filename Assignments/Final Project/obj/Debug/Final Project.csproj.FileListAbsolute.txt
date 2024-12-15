@@ -2,11 +2,11 @@ D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\bin\Debug\Final Proj
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\bin\Debug\Final Project.exe
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\bin\Debug\Final Project.pdb
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final Project.csproj.AssemblyReference.cache
-D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.MainForm.resources
-D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.SplashScreen.resources
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.Properties.Resources.resources
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final Project.csproj.GenerateResource.cache
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final Project.csproj.CoreCompileInputs.cache
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final Project.exe
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final Project.pdb
 D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.DBAL.frmAddorEdit.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.frmMain.resources
+D:\courses\COSC2100\Repo\COSC2100\Assignments\Final Project\obj\Debug\Final_Project.frmSplash.resources
